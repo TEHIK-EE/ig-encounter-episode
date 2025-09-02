@@ -1,0 +1,15 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://fhir.ee/eec/CodeSystem/ee-observation-code-system",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "EEObservationCodeSystem",
+      "title" : "Observation Code System",
+      "description" : "Locally defined code system for observation codes in the project.",
+      "uses" : {
+      },
+      "ValueSet-ee-observation-code-vs.html" : "Observation Code ValueSet"
+    }
+  ]
+}

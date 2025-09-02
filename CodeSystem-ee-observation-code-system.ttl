@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/eec/CodeSystem/ee-observation-code-system> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ee-observation-code-system"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ee-observation-code-system</b></p><a name=\"ee-observation-code-system\"> </a><a name=\"hcee-observation-code-system\"> </a><p>This  code system <code>https://fhir.ee/eec/CodeSystem/ee-observation-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">temperature<a name=\"ee-observation-code-system-temperature\"> </a></td><td>Body Temperature</td></tr><tr><td style=\"white-space:nowrap\">blood-pressure<a name=\"ee-observation-code-system-blood-pressure\"> </a></td><td>Blood Pressure</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/eec/CodeSystem/ee-observation-code-system"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EEObservationCodeSystem"] ; # 
+  fhir:title [ fhir:v "Observation Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-09-02T07:57:06+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.tehik.ee" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@tehik.ee" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "TEHIK Andmekorraldus" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "andmekorraldus@tehik.ee" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Locally defined code system for observation codes in the project."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "temperature" ] ;
+     fhir:display [ fhir:v "Body Temperature" ]
+  ] [
+     fhir:code [ fhir:v "blood-pressure" ] ;
+     fhir:display [ fhir:v "Blood Pressure" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

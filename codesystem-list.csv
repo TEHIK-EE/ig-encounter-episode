@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+https://fhir.ee/eec/CodeSystem/ee-observation-code-system,0.1.0,draft,,EEObservationCodeSystem,Observation Code System,"Locally defined code system for observation codes in the project.",

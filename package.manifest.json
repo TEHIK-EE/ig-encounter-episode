@@ -1,0 +1,7 @@
+{
+  "version" : "0.1.0",
+  "fhirVersion" : ["5.0.0"],
+  "date" : "20250902075706",
+  "name" : "ig-encounter-episode-condition",
+  "jurisdiction" : "urn:iso:std:iso:3166#EE"
+}

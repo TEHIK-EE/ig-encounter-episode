@@ -1,0 +1,68 @@
+TEHIKIGEncounterEpisodeofCareandCondition : Validation Results
+=========================================
+
+err = 1, warn = 22, info = 18
+IG Publisher Version: 2.0.16
+Generated Tue Sep 02 07:58:36 UTC 2025. FHIR version 5.0.0 for ig-encounter-episode-condition#0.1.0 (canonical = https://fhir.ee/eec)
+ Build Errors : 0 / 3 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-ee-observation-code-system : 0 / 4 / 2
+ /github/workspace/fsh-generated/resources/ImplementationGuide-ig-encounter-episode-condition : 0 / 3 / 16
+ /github/workspace/fsh-generated/resources/Observation-EEClinicalObservationExample : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/Patient-example : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ee-body-position-extension : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ee-clinical-observation : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-ee-body-position-vs : 1 / 3 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-ee-observation-code-vs : 0 / 2 / 1
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-ee-observation-code-system.json ==
+WARNING: CodeSystem/ee-observation-code-system: CodeSystem.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: CodeSystem/ee-observation-code-system: CodeSystem.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: CodeSystem/ee-observation-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/ee-observation-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/ee-observation-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/ImplementationGuide-ig-encounter-episode-condition.json ==
+WARNING: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.definition.parameter[6].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.definition.parameter[7].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.definition.parameter[8].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.definition.parameter[9].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.definition.parameter[10].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.definition.parameter[11].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.definition.parameter[12].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.definition.parameter[13].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.definition.parameter[14].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.definition.parameter[15].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.definition.parameter[16].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.definition.parameter[17].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.definition.parameter[18].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.definition.parameter[19].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.definition.parameter[25].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+WARNING: ImplementationGuide/ig-encounter-episode-condition: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package ee.fhir.base#1.1.1 released on 2024-07-30, but the most recent appropriate version is 1.1.3. This reference is getting old and the more recent version should be considered
+== fsh-generated/resources/Observation-EEClinicalObservationExample.json ==
+INFORMATION: Observation/EEClinicalObservationExample: Observation.code: Reference to draft CodeSystem https://fhir.ee/eec/CodeSystem/ee-observation-code-system|0.1.0
+INFORMATION: Observation/EEClinicalObservationExample: Observation.value.ofType(Quantity): The definition for the Code System with URI 'http://unitsofmeasure.org' doesn't provide any codes so the code cannot be validated
+WARNING: Observation/EEClinicalObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Patient-example.json ==
+== fsh-generated/resources/StructureDefinition-ee-body-position-extension.json ==
+WARNING: StructureDefinition/ee-body-position-extension: StructureDefinition.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: StructureDefinition/ee-body-position-extension: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-ee-clinical-observation.json ==
+WARNING: StructureDefinition/ee-clinical-observation: StructureDefinition.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: StructureDefinition/ee-clinical-observation: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/ee-clinical-observation: StructureDefinition.snapshot.element[22].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ee-clinical-observation: StructureDefinition.snapshot.element[50].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental
+== fsh-generated/resources/ValueSet-ee-body-position-vs.json ==
+WARNING: ValueSet/ee-body-position-vs: ValueSet.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: ValueSet/ee-body-position-vs: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+ERROR: ValueSet/ee-body-position-vs: ValueSet.compose.include[0].concept[1]: Error from https://term.tehik.ee/fhir/: Error: (no details supplied)
+Information: (no details supplied)
+
+WARNING: ValueSet/ee-body-position-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-ee-observation-code-vs.json ==
+WARNING: ValueSet/ee-observation-code-vs: ValueSet.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: ValueSet/ee-observation-code-vs: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated

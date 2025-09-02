@@ -1,0 +1,44 @@
+[
+  {
+    "id" : "ee-observation-code-system",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/eec/CodeSystem/ee-observation-code-system",
+    "version" : "0.1.0",
+    "name" : "EEObservationCodeSystem"
+  },
+  {
+    "id" : "ig-encounter-episode-condition",
+    "type" : "ImplementationGuide",
+    "url" : "https://fhir.ee/eec/ImplementationGuide/ig-encounter-episode-condition",
+    "version" : "0.1.0",
+    "name" : "TEHIKIGEncounterEpisodeofCareandCondition"
+  },
+  {
+    "id" : "ee-body-position-extension",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/eec/StructureDefinition/ee-body-position-extension",
+    "version" : "0.1.0",
+    "name" : "EEBodyPositionExtension"
+  },
+  {
+    "id" : "ee-clinical-observation",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/eec/StructureDefinition/ee-clinical-observation",
+    "version" : "0.1.0",
+    "name" : "EEClinicalObservation"
+  },
+  {
+    "id" : "ee-body-position-vs",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/eec/ValueSet/ee-body-position-vs",
+    "version" : "0.1.0",
+    "name" : "EEBodyPositionVS"
+  },
+  {
+    "id" : "ee-observation-code-vs",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/eec/ValueSet/ee-observation-code-vs",
+    "version" : "0.1.0",
+    "name" : "EEObservationCodeVS"
+  }
+]

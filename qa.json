@@ -1,0 +1,19 @@
+{
+  "url" : "https://fhir.ee/eec/ImplementationGuide/ig-encounter-episode-condition",
+  "name" : "TEHIKIGEncounterEpisodeofCareandCondition",
+  "title" : "TEHIK FHIR IG Encounter, Episode of Care and Condition",
+  "description" : "TEHIK IG project to Encounter, Episode of Care and Condition",
+  "status" : "draft",
+  "package-id" : "ig-encounter-episode-condition",
+  "ig-ver" : "0.1.0",
+  "date" : "Tue, 02 Sep, 2025 07:57:40 +0000",
+  "dateISO8601" : "2025-09-02T07:57:40+00:00",
+  "errs" : 1,
+  "warnings" : 22,
+  "hints" : 18,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "5.0.0",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1738371256
+}

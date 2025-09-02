@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/eec/ValueSet/ee-observation-code-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ee-observation-code-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ee-observation-code-vs</b></p><a name=\"ee-observation-code-vs\"> </a><a name=\"hcee-observation-code-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-ee-observation-code-system.html\"><code>https://fhir.ee/eec/CodeSystem/ee-observation-code-system</code></a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/eec/ValueSet/ee-observation-code-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EEObservationCodeVS"] ; # 
+  fhir:title [ fhir:v "Observation Code ValueSet"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-09-02T07:57:06+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.tehik.ee" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@tehik.ee" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "TEHIK Andmekorraldus" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "andmekorraldus@tehik.ee" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Locally defined codes used for clinical observation types in the project."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://fhir.ee/eec/CodeSystem/ee-observation-code-system"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,3 +1,3 @@
-Encounter, Episode of Care and Condition
+Encounter and Episode of Care
 
-This IG is for Encounter, Episode of Care and Condition implementation.
+This IG is for Encounter and Episode of Care implementation.

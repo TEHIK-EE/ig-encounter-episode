@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ee-observation-code-system"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ee-observation-code-system</b></p><a name="ee-observation-code-system"> </a><a name="hcee-observation-code-system"> </a><p>This  code system <code>https://fhir.ee/encounter-episode/CodeSystem/ee-observation-code-system</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">temperature<a name="ee-observation-code-system-temperature"> </a></td><td>Body Temperature</td></tr><tr><td style="white-space:nowrap">blood-pressure<a name="ee-observation-code-system-blood-pressure"> </a></td><td>Blood Pressure</td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/encounter-episode/CodeSystem/ee-observation-code-system"/>
+  <version value="0.1.0"/>
+  <name value="EEObservationCodeSystem"/>
+  <title value="Observation Code System"/>
+  <status value="draft"/>
+  <date value="2025-09-29T07:51:44+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.tehik.ee"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@tehik.ee"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="TEHIK Andmekorraldus"/>
+    <telecom>
+      <system value="email"/>
+      <value value="andmekorraldus@tehik.ee"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Locally defined code system for observation codes in the project."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="temperature"/>
+    <display value="Body Temperature"/>
+  </concept>
+  <concept>
+    <code value="blood-pressure"/>
+    <display value="Blood Pressure"/>
+  </concept>
+</CodeSystem>

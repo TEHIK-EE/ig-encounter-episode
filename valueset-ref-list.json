@@ -1,0 +1,30 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://fhir.ee/encounter-episode/ValueSet/ee-body-position-vs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EEBodyPositionVS",
+      "title" : "Body Position ValueSet",
+      "description" : "ValueSet for body positions during clinical measurements.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-body-position-extension.html" : "Body Position During Measurement"
+    },
+    {
+      "url" : "https://fhir.ee/encounter-episode/ValueSet/ee-observation-code-vs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EEObservationCodeVS",
+      "title" : "Observation Code ValueSet",
+      "description" : "Locally defined codes used for clinical observation types in the project.",
+      "systems" : [
+        "https://fhir.ee/encounter-episode/CodeSystem/ee-observation-code-system"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-clinical-observation.html" : "Clinical Observation"
+    }
+  ]
+}

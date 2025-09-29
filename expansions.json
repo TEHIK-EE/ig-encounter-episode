@@ -1,0 +1,136 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "aa930768-08f2-4e26-8292-245a74d5d2ec",
+  "meta" : {
+    "lastUpdated" : "2025-09-29T07:52:24.844+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://fhir.ee/encounter-episode/ValueSet/ee-body-position-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from term.tehik.ee based on SNOMED CT 11000181102 edition 30-May 2025</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-33586001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/33586001\">33586001</a></td><td>http://snomed.info/sct</td><td>Sitting position</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-10904000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/10904000\">10904000</a></td><td>http://snomed.info/sct</td><td>Standing position</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-110483000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/110483000\">110483000</a></td><td>http://snomed.info/sct</td><td>Lying position</td></tr></table></div>"
+      },
+      "url" : "https://fhir.ee/encounter-episode/ValueSet/ee-body-position-vs",
+      "version" : "0.1.0",
+      "name" : "EEBodyPositionVS",
+      "title" : "Body Position ValueSet",
+      "status" : "active",
+      "date" : "2025-09-29T07:51:44+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "EE",
+          "display" : "Estonia"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:6567bf05-6117-4527-86af-17ef4739832e",
+        "timestamp" : "2025-09-29T07:53:13+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20250530"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20250530"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "33586001",
+          "display" : "Sitting position"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "10904000",
+          "display" : "Standing position"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "110483000",
+          "display" : "Lying position"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.ee/encounter-episode/ValueSet/ee-observation-code-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-ee-observation-code-system.html\">codesystem Observation Code System v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://fhir.ee/encounter-episode/CodeSystem/ee-observation-code-system-temperature\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ee-observation-code-system.html#ee-observation-code-system-temperature\">temperature</a></td><td>https://fhir.ee/encounter-episode/CodeSystem/ee-observation-code-system</td><td>Body Temperature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://fhir.ee/encounter-episode/CodeSystem/ee-observation-code-system-blood-pressure\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ee-observation-code-system.html#ee-observation-code-system-blood-pressure\">blood-pressure</a></td><td>https://fhir.ee/encounter-episode/CodeSystem/ee-observation-code-system</td><td>Blood Pressure</td></tr></table></div>"
+      },
+      "url" : "https://fhir.ee/encounter-episode/ValueSet/ee-observation-code-vs",
+      "version" : "0.1.0",
+      "name" : "EEObservationCodeVS",
+      "title" : "Observation Code ValueSet",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-09-29T07:51:44+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "EE",
+          "display" : "Estonia"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:186c2514-da29-4a74-854a-d2df66644d16",
+        "timestamp" : "2025-09-29T07:53:14+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-draft",
+          "valueUri" : "https://fhir.ee/encounter-episode/CodeSystem/ee-observation-code-system|0.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://fhir.ee/encounter-episode/CodeSystem/ee-observation-code-system|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://fhir.ee/encounter-episode/CodeSystem/ee-observation-code-system",
+          "code" : "temperature",
+          "display" : "Body Temperature"
+        },
+        {
+          "system" : "https://fhir.ee/encounter-episode/CodeSystem/ee-observation-code-system",
+          "code" : "blood-pressure",
+          "display" : "Blood Pressure"
+        }]
+      }
+    }
+  }]
+}

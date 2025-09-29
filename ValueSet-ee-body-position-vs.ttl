@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/encounter-episode/ValueSet/ee-body-position-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ee-body-position-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ee-body-position-vs</b></p><a name=\"ee-body-position-vs\"> </a><a name=\"hcee-body-position-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/33586001\">33586001</a></td><td>Sitting position</td></tr><tr><td><a href=\"http://snomed.info/id/10904000\">10904000</a></td><td>Standing position</td></tr><tr><td><a href=\"http://snomed.info/id/110483000\">110483000</a></td><td>Lying position</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/encounter-episode/ValueSet/ee-body-position-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EEBodyPositionVS"] ; # 
+  fhir:title [ fhir:v "Body Position ValueSet"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-09-29T07:51:44+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.tehik.ee" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@tehik.ee" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "TEHIK Andmekorraldus" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "andmekorraldus@tehik.ee" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ValueSet for body positions during clinical measurements."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "33586001" ] ;
+         fhir:display [ fhir:v "Sitting position" ]
+       ] [
+         fhir:code [ fhir:v "10904000" ] ;
+         fhir:display [ fhir:v "Standing position" ]
+       ] [
+         fhir:code [ fhir:v "110483000" ] ;
+         fhir:display [ fhir:v "Lying position" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

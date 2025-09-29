@@ -1,0 +1,44 @@
+[
+  {
+    "id" : "ee-observation-code-system",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/encounter-episode/CodeSystem/ee-observation-code-system",
+    "version" : "0.1.0",
+    "name" : "EEObservationCodeSystem"
+  },
+  {
+    "id" : "ig-encounter-episode",
+    "type" : "ImplementationGuide",
+    "url" : "https://fhir.ee/encounter-episode/ImplementationGuide/ig-encounter-episode",
+    "version" : "0.1.0",
+    "name" : "TEHIKIGEncounterandEpisodeofCare"
+  },
+  {
+    "id" : "ee-body-position-extension",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/encounter-episode/StructureDefinition/ee-body-position-extension",
+    "version" : "0.1.0",
+    "name" : "EEBodyPositionExtension"
+  },
+  {
+    "id" : "ee-clinical-observation",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/encounter-episode/StructureDefinition/ee-clinical-observation",
+    "version" : "0.1.0",
+    "name" : "EEClinicalObservation"
+  },
+  {
+    "id" : "ee-body-position-vs",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/encounter-episode/ValueSet/ee-body-position-vs",
+    "version" : "0.1.0",
+    "name" : "EEBodyPositionVS"
+  },
+  {
+    "id" : "ee-observation-code-vs",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/encounter-episode/ValueSet/ee-observation-code-vs",
+    "version" : "0.1.0",
+    "name" : "EEObservationCodeVS"
+  }
+]

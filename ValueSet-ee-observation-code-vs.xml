@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ee-observation-code-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ee-observation-code-vs</b></p><a name="ee-observation-code-vs"> </a><a name="hcee-observation-code-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-ee-observation-code-system.html"><code>https://fhir.ee/encounter-episode/CodeSystem/ee-observation-code-system</code></a></li></ul></div>
+  </text>
+  <url value="https://fhir.ee/encounter-episode/ValueSet/ee-observation-code-vs"/>
+  <version value="0.1.0"/>
+  <name value="EEObservationCodeVS"/>
+  <title value="Observation Code ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-09-29T07:51:44+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.tehik.ee"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@tehik.ee"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="TEHIK Andmekorraldus"/>
+    <telecom>
+      <system value="email"/>
+      <value value="andmekorraldus@tehik.ee"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Locally defined codes used for clinical observation types in the project."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir.ee/encounter-episode/CodeSystem/ee-observation-code-system"/>
+    </include>
+  </compose>
+</ValueSet>

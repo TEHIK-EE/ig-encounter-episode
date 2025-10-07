@@ -2,7 +2,7 @@ Profile: EETISEncounter
 Parent: EEBaseEncounter
 Id: ee-tis-encounter
 Title: "EE TIS Encounter"
-Description: "A profile for basic encounter."
+Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
 
 * status ^short = "Kas on vaja HL7 LOEND tõlkida?"
 * class 1..1

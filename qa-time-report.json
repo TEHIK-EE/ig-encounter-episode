@@ -1,0 +1,225 @@
+{
+  "date" : "Tue, 07 Oct, 2025 13:15:23 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-ig-encounter-episode.json",
+      "size" : 4667,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 32,
+          "length" : 11
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 8
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 33,
+          "length" : 85
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 3667
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 46
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 64
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ee-tis-encounter.json",
+      "size" : 3228,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 32,
+          "length" : 86
+        },
+        {
+          "activity" : "load",
+          "start" : 32,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 32,
+          "length" : 80
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 33,
+          "length" : 105
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 2939
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 46,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 227
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 1435
+        },
+        {
+          "activity" : "generate2",
+          "start" : 50,
+          "length" : 1377
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 11
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 70,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 70,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ee-tis-eoc-or-encounter-reference.json",
+      "size" : 1818,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 32,
+          "length" : 52
+        },
+        {
+          "activity" : "load",
+          "start" : 32,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 32,
+          "length" : 38
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 33,
+          "length" : 57
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 4997
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 33
+        },
+        {
+          "activity" : "generate2",
+          "start" : 50,
+          "length" : 100
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 57
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ee-tis-episode-of-care.json",
+      "size" : 3766,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 32,
+          "length" : 50
+        },
+        {
+          "activity" : "load",
+          "start" : 32,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 32,
+          "length" : 58
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 33,
+          "length" : 53
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 1401
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 127
+        },
+        {
+          "activity" : "generate2",
+          "start" : 50,
+          "length" : 307
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 169
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 5
+        }
+      ]
+    }
+  ]
+}

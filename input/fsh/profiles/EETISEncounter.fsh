@@ -4,7 +4,7 @@ Id: ee-tis-encounter
 Title: "EE TIS Encounter"
 Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
 
-* status ^short = "Kas on vaja HL7 LOEND tõlkida?"
+* status ^short = "Kas on vaja HL7 LOEND tõlkida? Või äkki ikkagi pole?"
 * class 1..1
 * class ^short = "Describes the form of encounter (|ambulatoorne|,|statsionaarne|, |kiirabi|... HL7 loendile mäping+tõlge?)"
 * type ^short = "Type or aim of encounter. (|ravi|,|erakorraline|, |ennetus|... VAJA LOENDIT)"

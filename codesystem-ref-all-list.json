@@ -1,0 +1,280 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/encounter-diagnosis-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "EncounterDiagnosisUse",
+      "title" : "Encounter Diagnosis Use",
+      "description" : "Encounter Condition Use",
+      "oids" : ["2.16.840.1.113883.4.642.4.2115"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-encounter-diagnosis-use.html" : "Encounter Diagnosis Use"
+    },
+    {
+      "url" : "http://hl7.org/fhir/encounter-location-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "EncounterLocationStatus",
+      "title" : "Encounter Location Status",
+      "description" : "The status of the location.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.1.258",
+        "2.16.840.1.113883.4.642.2.147",
+        "2.16.840.1.113883.4.642.4.263"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-encounter-location-status.html" : "Encounter Location Status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/encounter-reason-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "EncounterReasonUse",
+      "title" : "Encounter Reason Use",
+      "description" : "Encounter Reason Use",
+      "oids" : ["2.16.840.1.113883.4.642.4.2114"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-encounter-reason-use.html" : "Encounter Reason Use"
+    },
+    {
+      "url" : "http://hl7.org/fhir/encounter-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "EncounterStatus",
+      "title" : "Encounter Status",
+      "description" : "Current state of the encounter.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.4.247",
+        "2.16.840.1.113883.4.642.1.242"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-encounter-status.html" : "Encounter Status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/episode-of-care-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "EpisodeOfCareStatus",
+      "title" : "Episode Of Care Status",
+      "description" : "The status of the episode of care.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.4.665",
+        "2.16.840.1.113883.4.642.2.346",
+        "2.16.840.1.113883.4.642.1.649"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-episode-of-care-status.html" : "Episode Of Care Status"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AdmitSource",
+      "title" : "Admit source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1092"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-encounter-admit-source.html" : "Admit Source"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/diet",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1091"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-encounter-diet.html" : "Diet"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1093"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-encounter-discharge-disposition.html" : "Discharge Disposition"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "SpecialArrangements",
+      "title" : "Special arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1090"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-encounter-special-arrangements.html" : "Special Arrangements"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/encounter-subject-status",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "EncounterSubjectStatus",
+      "title" : "Encounter subject status",
+      "description" : "This example value set defines a set of codes that can be used to indicate the status of the subject within the encounter",
+      "oids" : ["2.16.840.1.113883.4.642.1.1420"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-encounter-subject-status.html" : "Encounter Subject Status"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/encounter-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "EncounterType",
+      "title" : "Encounter type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1088"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-encounter-type.html" : "Encounter Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/episodeofcare-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "EpisodeOfCareType",
+      "title" : "Episode of care type",
+      "description" : "This example value set defines a set of codes that can be used to express the usage type of an EpisodeOfCare record.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1189"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-episodeofcare-type.html" : "Episode Of Care Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.\r\rThis includes several 'non physical' codes which are still considered a location.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-location-form.html" : "Location Form"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/participant-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1089"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-encounter-participant-type.html" : "Participant Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/service-type",
+      "version" : "1.1.1",
+      "status" : "active",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1145"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-service-type.html" : "Service Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0092",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ReAdmissionIndicator",
+      "title" : "re-admissionIndicator",
+      "description" : "Code system of concepts which are used to specify that a patient is being re admitted to a healthcare facilityin from which they were discharged, and indicates the circumstances around such re-admission.  Used in HL7 Version 2.x messagine in the PV1 segment.",
+      "oids" : ["2.16.840.1.113883.18.36"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "9.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "oids" : ["2.16.840.1.113883.5.4"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-encounter-class.html" : "Encounter class"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A set of codes (e.g., for routine, emergency), specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.",
+      "oids" : ["2.16.840.1.113883.5.7"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActPriority.html" : "ActPriority"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "EncounterSpecialCourtesy",
+      "title" : "EncounterSpecialCourtesy",
+      "description" : "**** MISSING DESCRIPTION ****",
+      "oids" : ["2.16.840.1.113883.5.40"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ParticipationType",
+      "title" : "ParticipationType",
+      "description" : "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation.",
+      "oids" : ["2.16.840.1.113883.5.90"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-encounter-participant-type.html" : "Participant Type"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages",
+      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages"
+    }
+  ]
+}

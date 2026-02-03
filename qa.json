@@ -1,0 +1,19 @@
+{
+  "url" : "https://fhir.ee/encounter-episode/ImplementationGuide/ig-encounter-episode",
+  "name" : "TEHIKIGEncounterandEpisodeofCare",
+  "title" : "TEHIK FHIR IG Encounter and Episode of Care",
+  "description" : "TEHIK IG project to Encounter and Episode of Care",
+  "status" : "draft",
+  "package-id" : "ig-encounter-episode",
+  "ig-ver" : "0.1.0",
+  "date" : "Tue, 03 Feb, 2026 07:13:12 +0000",
+  "dateISO8601" : "2026-02-03T07:13:12+00:00",
+  "errs" : 1,
+  "warnings" : 48,
+  "hints" : 16,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "5.0.0",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2047674808
+}

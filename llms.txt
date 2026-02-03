@@ -1,0 +1,26 @@
+# ig-encounter-episode#0.1.0: TEHIK FHIR IG Encounter and Episode of Care
+
+## Pages
+
+* [Home](index.md)
+* [Sample page 2](page2.md)
+* [Diagram examples](page1.md)
+* [Contacts](contacts.md)
+* [Artifacts Summary](artifacts.md)
+* [Search](search.md)
+* [Downloads](downloads.md)
+
+## Resources
+
+### Resource Profiles
+
+* [EE TIS Encounter](StructureDefinition-ee-tis-encounter.md)
+* [EE TIS Episode of Care](StructureDefinition-ee-tis-episode-of-care.md)
+
+### Extensions
+
+* [EoC or Encounter reference](StructureDefinition-ee-tis-eoc-or-encounter-reference.md)
+
+### ImplementationGuides
+
+* [TEHIK FHIR IG Encounter and Episode of Care](index.md)

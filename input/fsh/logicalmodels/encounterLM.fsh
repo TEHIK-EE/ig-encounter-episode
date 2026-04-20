@@ -42,18 +42,49 @@ https://fhir.ee/ValueSet/tervishoiutootaja-kutse
  // * ^requirements = "Erialade loend, Ametite klassifikaator"  
 
 * TervishoiukontaktiOsalised 1..1 string "tbc"
+  * ^requirements = "vajadus"
+
 * MuuAbipersonalOsalised 1..1 string "tbc"
+  * ^requirements = "vajadus"
+
 * TervishoiukontaktiTeenusepakkuja 1..1 string "tbc"
+  * ^requirements = "vajadus"
+
 * TervishoiukontaktiToimumiseAsukoht 1..1 string "tbc"
+  * ^requirements = "vajadus"
+
 * TervishoiukontaktiStaatus 1..1 string "tbc"
+  * ^requirements = "vajadus"
+
 * TervishoiukontaktiLiik 1..1 string "tbc"
+  * ^requirements = "vajadus"
+
 * TervishoiukontaktiErakorralisus 1..1 string "tbc"
+  * ^requirements = "vajadus"
+
 * TervishoiukontaktiKlass 1..1 string "tbc"
+  * ^requirements = "vajadus"
+
 * TervishoiukontaktiTyyp 1..1 string "tbc"
+  * ^requirements = "vajadus"
+
 * TegelikPeriood 1..1 string "tbc"
+  * ^requirements = "vajadus"
+
 * SaabumiseViis 1..1 string "tbc"
+  * ^requirements = "vajadus"
+
 * Episood 1..1 string "tbc"
+  * ^requirements = "vajadus"
+
 * TervishoiukontaktiDiagnoos 1..1 string "tbc"
+  * ^requirements = "vajadus"
+
 * HaiglaraviLoppemiseTulemus 1..1 string "tbc"
+  * ^requirements = "vajadus"
+
 * SaatekirjaAndmed 1..1 string "tbc"
+  * ^requirements = "vajadus"
+
 * TervishoiukontaktiKokkuvoteRavist 1..1 string "tbc"
+  * ^requirements = "vajadus"

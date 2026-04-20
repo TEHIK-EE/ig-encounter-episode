@@ -27,16 +27,33 @@ Characteristics: #can-be-target
 //  * ^binding.strength = #preferred
   * ^requirements = "vajadus"
 
-* TervishoiukontaktiPlaneeritudPeriood 0..1 CodeableConcept "Isiku kontaktandmed (kontakti tüüp ja väärtus), mis kehtivad üle kõikide töökohtade (nt mobiiltelefon)"
-  * ^binding.description = """
+* TervishoiukontaktiPlaneeritudPeriood 0..1 string "Isiku kontaktandmed (kontakti tüüp ja väärtus), mis kehtivad üle kõikide töökohtade (nt mobiiltelefon)"
+  /* * ^binding.description = """
 https://fhir.ee/ValueSet/tervishoiutootaja-kutse
 """
   * ^binding.strength = #preferred
-  * ^requirements = "MEDRE kutse loend"
+  * ^requirements = "MEDRE kutse loend" */
 
-* TervishoiukontaktiSubjekt 1..1 CodeableConcept "Isiku kontaktandmed (kontakti tüüp ja väärtus), mis kehtivad üle kõikide töökohtade (nt mobiiltelefon)"
-  * ^binding.description = """
-https://fhir.ee/ValueSet/erialad
-"""
-  * ^binding.strength = #preferred
-  * ^requirements = "Erialade loend, Ametite klassifikaator"  
+* TervishoiukontaktiSubjekt 1..1  string "Isiku kontaktandmed (kontakti tüüp ja väärtus), mis kehtivad üle kõikide töökohtade (nt mobiiltelefon)"
+  //* ^binding.description = """
+//https://fhir.ee/ValueSet/erialad
+//"""
+ // * ^binding.strength = #preferred
+ // * ^requirements = "Erialade loend, Ametite klassifikaator"  
+
+* TervishoiukontaktiOsalised 1..1 string "tbc"
+* MuuAbipersonalOsalised 1..1 string "tbc"
+* TervishoiukontaktiTeenusepakkuja 1..1 string "tbc"
+* TervishoiukontaktiToimumiseAsukoht 1..1 string "tbc"
+* TervishoiukontaktiStaatus 1..1 string "tbc"
+* TervishoiukontaktiLiik 1..1 string "tbc"
+* TervishoiukontaktiErakorralisus 1..1 string "tbc"
+* TervishoiukontaktiKlass 1..1 string "tbc"
+* TervishoiukontaktiTyyp 1..1 string "tbc"
+* TegelikPeriood 1..1 string "tbc"
+* SaabumiseViis 1..1 string "tbc"
+* Episood 1..1 string "tbc"
+* TervishoiukontaktiDiagnoos 1..1 string "tbc"
+* HaiglaraviLoppemiseTulemus 1..1 string "tbc"
+* SaatekirjaAndmed 1..1 string "tbc"
+* TervishoiukontaktiKokkuvoteRavist 1..1 string "tbc"

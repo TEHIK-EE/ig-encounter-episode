@@ -41,10 +41,10 @@ https://fhir.ee/ValueSet/tervishoiutootaja-kutse
  // * ^binding.strength = #preferred
  // * ^requirements = "Erialade loend, Ametite klassifikaator"  
 
-* TervishoiukontaktiOsalised 1..1 EESPDPractitioner or EETISSPDPractitionerRole "TTO-st isikud, kes osalesid Tervishoiukontaktis (nt arst, õde, dokumenteerija)."
+* TervishoiukontaktiOsalised 1..1 string "TTO-st isikud, kes osalesid Tervishoiukontaktis (nt arst, õde, dokumenteerija)."
   * ^requirements = "vajadus"
 
-* MuuAbipersonalOsalised 1..1 EESPDPractitionerLimited "Muu abipersonal või osalised, kes Tervishoiukontaktiga seotud olid. Võimaldab Tervishoiukontakti andmestikku lisada isikuid, kes Tervishoiukontaktis on olulised välja tuua (nt tõlk, sotsiaaltöötaja, jne)."
+* MuuAbipersonalOsalised 1..1 string "Muu abipersonal või osalised, kes Tervishoiukontaktiga seotud olid. Võimaldab Tervishoiukontakti andmestikku lisada isikuid, kes Tervishoiukontaktis on olulised välja tuua (nt tõlk, sotsiaaltöötaja, jne)."
   * ^requirements = "vajadus"
 
 * TervishoiukontaktiTeenusepakkuja 1..1 string "tbc"

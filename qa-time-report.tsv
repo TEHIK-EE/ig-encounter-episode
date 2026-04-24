@@ -1,0 +1,19 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-ig-encounter-episode.json	4901	-	0	0	0	0	0	0	4	108	0	0	0	0	0	0	0	0	0	0	309	33	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-EETISEncounterLM.json	10068	10	0	24	2	0	1	0	0	57	0	0	1	0	0	0	0	1	0	0	338	3758	0	0	0	6	0	1
+fsh-generated/resources/StructureDefinition-ee-tis-encounter.json	4292	5	0	52	0	0	0	0	0	30	0	0	0	0	0	0	0	1	0	0	397	314	0	0	0	5	1	0
+fsh-generated/resources/StructureDefinition-ee-tis-eoc-or-encounter-reference.json	2086	3	0	5	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	21	63	0	0	0	1	0	1
+fsh-generated/resources/StructureDefinition-ee-tis-episode-of-care.json	3766	3	0	15	0	0	0	0	0	19	0	0	0	0	0	0	0	0	0	0	321	149	0	0	0	3	0	0
+/fsh-generated/includes/fsh-link-references.md	291	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/fsh-generated/includes/menu.xml	1726	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/index.md	1973	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/contacts.md	373	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/downloads.xml	1148	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	23	0	0	0	0	0	0
+/input/pagecontent/page2.md	87	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/search.xml	446	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	0	0	0	0	0	0
+/input/pagecontent/page1.md	107	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images/robots.txt	24	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/temp/pages/_includes/artifacts.xml	3485	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	0	0	0	0	0	0	0

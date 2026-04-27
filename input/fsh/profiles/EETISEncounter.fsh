@@ -4,27 +4,37 @@ Id: ee-tis-encounter
 Title: "EE TIS Encounter"
 Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
 
+* meta.versionId ^short = "versiooni identifikaator"
 * identifier ^short = "Kas see oleks vaja sliceda?"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
-* identifier ^slicing.description = "When there is a need for inhouse identifier and overall identifier, different systems must be used."
+* identifier ^slicing.description = "When there is a need for local identifier and overall identifier, different systems must be used."
 * identifier ^slicing.ordered = false
 * identifier contains
-    ttoInhouseIdentifier 0..1 and
+    ttoLocalIdentifier 0..1 and
     crossTtoIdentifier 0..1
 * status ^short = "Kas on vaja HL7 LOEND tõlkida? Või äkki ikkagi pole?"
 * class 1..1
 * class ^short = "Describes the form of encounter (|ambulatoorne|,|statsionaarne|, |kiirabi|... HL7 loendile mäping+tõlge?)"
 * type ^short = "Type or aim of encounter. (|ravi|,|erakorraline|, |ennetus|... VAJA LOENDIT)"
+* plannedStartDate ^short = "Kontakti planeeritud algusaeg"
+* plannedEndDate ^short = "Kontakti planeeeritud lõpuaeg"
+* serviceType ^short = "AMB.teenuste loend?"
 * subject only Reference($ee-mpi-patient or EEBasePatient)
+//* basedOn only Reference(ServiceRequest)
+* basedOn ^short = "Refferral or other document that is related to this encounter. (ee Saatekiri või muu dokument, mis on seotud tervishoiukontaktiga.)"
 * participant.actor only Reference(EEBasePractitioner or EEBaseRelatedPerson or EEBasePractitionerRole)
-* participant ^short = "Use references to SPD when it is published!"
+* participant ^short = "Use references to SPD when it is published! (ee Tervishoiukontakti osalejad PEAKSID tulema SPD-st, siis kui see avaldatud on. )"
 * actualPeriod ^short = "When encounter started and ended? (ee Millal kontakt algas ja lõppes)"
 * location.location only Reference(EEBaseLocation)
-* location ^short = "Physical location of encounter (ee Füüsiline asukoht kus kontakt toimus (AGA KUI ON VIRTUAALNE?)"
+* location ^short = "Physical location of encounter (ee Füüsiline asukoht kus kontakt toimus (Muuta SPD-referentsiks kui valmis!)"
 * reason ^short = "Reason(s) for encounter (ee Põhjused, miks tervishoiukontakt toimus)"
+* reason.value only CodeableReference(Condition)
 * diagnosis ^short = "All diagnosis that are related to this encounter (ee Kõik diagnoosid, mis on seotud tervishoiukontaktiga.)"
 * serviceProvider only Reference(EEBaseOrganization)
+* serviceProvider 1..1
+* serviceProvider ^short = "Use SPD when it is published! (ee TTO, kelle juures Tervishoiukontakt toimus.)"
 * admission ^short = "Describes how was the condition or where the patient went after discharge (ee Kirjeldab, kuhu patsient suunati või milline oli seisund lahkumisel.)"
 * episodeOfCare ^short = "EoC that is related to this encounter (ee Raviepisood, millega see kontakt seotud on)"
+* episodeOfCare 1..1 

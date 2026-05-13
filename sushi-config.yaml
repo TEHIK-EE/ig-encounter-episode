@@ -5,7 +5,7 @@
 
 # SUSHI will use id as both id and packageId in the IG unless a
 # specific packageId is also provided in this file.
-id: ig-encounter-episode # REPLACE_ME: use a unique id for your IG
+id: ig-ee-encounter-episode # REPLACE_ME: use a unique id for your IG
 canonical: https://fhir.ee/encounter-episode # REPLACE_ME: canonical url should start with https://fhir.ee/ and end with domain specific path
 name: TEHIK IG Encounter and Episode of Care  # REPLACE_ME:
 title: "TEHIK FHIR IG Encounter and Episode of Care" # REPLACE_ME:

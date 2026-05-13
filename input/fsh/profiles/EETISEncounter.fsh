@@ -5,6 +5,7 @@ Title: "EE TIS Encounter"
 Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
 
 * meta.versionId ^short = "versiooni identifikaator"
+* meta.security ^short = "Konfidentsiaalsus siia? HL7 codesystem."
 * identifier ^short = "Kas see oleks vaja sliceda?"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"

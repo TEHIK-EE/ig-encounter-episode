@@ -18,11 +18,19 @@ Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
     crossTtoIdentifier 0..1
 * status ^short = "HL7 loend"
 * class 1..1
-* class ^short = "KLASS. Describes the form of encounter (|ambulatoorne|,|statsionaarne|; HL7 loendile mäping+tõlge?)"
-* priority ^short = "ERAKORRALISUS. "
-* type ^short = "Tervishoiukontakti TÜÜP. Type or aim of encounter. (|ravi|,|erakorraline|, |ennetus|... VAJA LOENDIT)"
-* plannedStartDate ^short = "Kontakti planeeritud algusaeg"
-* plannedEndDate ^short = "Kontakti planeeeritud lõpuaeg"
+* class ^short = "(ee KLASS. Describes the form of encounter (|ambulatoorne|,|statsionaarne|; HL7 loendile mäping+tõlge? Fix kood per profiil?)"
+* priority ^short = "(ee ERAKORRALISUS. |erakorraline|, |vältimatu|, |plaaniline|)"
+* type ^short = "Tervishoiukontakti TÜÜP ja LIIK (|esmane|, |korduv|). Type or aim of encounter. (|visiit|,|videokonsultatsioon|, |email|, |telefonikonsultatsioon|,... VAJA LOENDIT)"
+* type ^slicing.discriminator.type = #value
+* type ^slicing.discriminator.path = "system"
+* type ^slicing.rules = #open
+* type ^slicing.description = "When there is a need for local identifier and overall identifier, different systems must be used."
+* type ^slicing.ordered = false
+* type contains
+    encounterType 0..1 and
+    encounterRecurrence 0..1
+* plannedStartDate ^short = "(ee Kontakti planeeritud algusaeg)"
+* plannedEndDate ^short = "(ee Kontakti planeeeritud lõpuaeg)"
 * serviceType ^short = "AMB.teenuste loend?"
 * subject only Reference($ee-mpi-patient or EEBasePatient)
 //* basedOn only Reference(ServiceRequest)
@@ -33,8 +41,9 @@ Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
 * location.location only Reference(EEBaseLocation)
 * location ^short = "Physical location of encounter (ee Füüsiline asukoht kus kontakt toimus (Muuta SPD-referentsiks kui valmis!)"
 * reason ^short = "Reason(s) for encounter (ee Põhjused, miks tervishoiukontakt toimus)"
-* reason.value only CodeableReference(Condition)
+//* reason.value only CodeableReference(Condition)
 * diagnosis ^short = "All diagnosis that are related to this encounter (ee Kõik diagnoosid, mis on seotud tervishoiukontaktiga.)"
+//* diagnosis.condition only CodeableReference(Condition)
 * serviceProvider only Reference(EEBaseOrganization)
 * serviceProvider 1..1
 * serviceProvider ^short = "Use SPD when it is published! (ee TTO, kelle juures Tervishoiukontakt toimus.)"

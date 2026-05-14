@@ -20,7 +20,7 @@ Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
 * class 1..1
 * class ^short = "(ee KLASS. Describes the form of encounter (|ambulatoorne|,|statsionaarne|; HL7 loendile mäping+tõlge? Fix kood per profiil?)"
 * priority ^short = "(ee ERAKORRALISUS. |erakorraline|, |vältimatu|, |plaaniline|)"
-* type ^short = "Tervishoiukontakti TÜÜP ja LIIK (|esmane|, |korduv|). Type or aim of encounter. (|visiit|,|videokonsultatsioon|, |email|, |telefonikonsultatsioon|,... VAJA LOENDIT)"
+* type ^short = "Tervishoiukontakti TÜÜP ja LIIK (|esmane|, |korduv|). Type or aim of encounter. (|visiit|,|videokonsultatsioon|, |email|, |telefonikonsultatsioon|,... VAJA LOENDIT kas korduva lahendada re-admissioniga? Kui see pole täidetud on alati esmane???)"
 * type ^slicing.discriminator.type = #value
 * type ^slicing.discriminator.path = "system"
 * type ^slicing.rules = #open
@@ -47,7 +47,7 @@ Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
 * serviceProvider only Reference(EEBaseOrganization)
 * serviceProvider 1..1
 * serviceProvider ^short = "Use SPD when it is published! (ee TTO, kelle juures Tervishoiukontakt toimus.)"
-* admission ^short = "Describes how was the condition or where the patient went after discharge (ee Kirjeldab, kuhu patsient suunati või milline oli seisund lahkumisel.)"
+* admission ^short = "Haiglaravi lõppemise tulemus - seisund, kuhu (koju/teise ttosse), asukoht, vabatekst (!?); (kas re-admissioniga võiks lahendada esmane/korduv?)"
 * episodeOfCare ^short = "EoC that is related to this encounter (ee Raviepisood, millega see kontakt seotud on)"
 * episodeOfCare 1..1 
 * specialArrangement 0..0

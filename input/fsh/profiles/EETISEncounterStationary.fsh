@@ -1,8 +1,8 @@
-Profile: EETISEncounter
+Profile: EETISEncounterStationary
 Parent: EEBaseEncounter
-Id: ee-tis-encounter
-Title: "EE TIS Encounter"
-Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
+Id: ee-tis-encounter-stationary
+Title: "EE TIS Stationary Encounter"
+Description: "A profile for stationary encounter. (ee Statsionaarne TERVISHOIUKONTAKT)"
 * extension contains
     ExtensionEETISSummary named summary 0..1
 * meta.versionId ^short = "versiooni identifikaator"
@@ -20,18 +20,18 @@ Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
 * class 1..1
 * class ^short = "(ee KLASS. Describes the form of encounter (|ambulatoorne|,|statsionaarne|; HL7 loendile mäping+tõlge? Fix kood per profiil?)"
 * priority ^short = "(ee ERAKORRALISUS. |erakorraline|, |vältimatu|, |plaaniline|)"
-* type ^short = "Tervishoiukontakti TÜÜP ja LIIK (|esmane|, |korduv|). Type or aim of encounter. (|visiit|,|videokonsultatsioon|, |email|, |telefonikonsultatsioon|,... VAJA LOENDIT kas korduva lahendada re-admissioniga? Kui see pole täidetud on alati esmane???)"
-* type ^slicing.discriminator.type = #value
-* type ^slicing.discriminator.path = "system"
-* type ^slicing.rules = #open
-* type ^slicing.description = "When there is a need for local identifier and overall identifier, different systems must be used."
-* type ^slicing.ordered = false
-* type contains
-    encounterType 0..1 and
-    encounterRecurrence 0..1
+//* type ^short = "Tervishoiukontakti TÜÜP ja LIIK (|esmane|, |korduv|). Type or aim of encounter. (|visiit|,|videokonsultatsioon|, |email|, |telefonikonsultatsioon|,... VAJA LOENDIT kas korduva lahendada re-admissioniga? Kui see pole täidetud on alati esmane???)"
+//* type ^slicing.discriminator.type = #value
+//* type ^slicing.discriminator.path = "system"
+//* type ^slicing.rules = #open
+//* type ^slicing.description = "When there is a need for local identifier and overall identifier, different systems must be used."
+//* type ^slicing.ordered = false
+//* type contains
+//    encounterType 0..1 and
+//    encounterRecurrence 0..1
 * plannedStartDate ^short = "(ee Kontakti planeeritud algusaeg)"
 * plannedEndDate ^short = "(ee Kontakti planeeeritud lõpuaeg)"
-* serviceType ^short = "AMB.teenuste loend?"
+//* serviceType ^short = "AMB.teenuste loend?"
 * subject only Reference($ee-mpi-patient or EEBasePatient)
 //* basedOn only Reference(ServiceRequest)
 * basedOn ^short = "Refferral or other document that is related to this encounter. (ee SAATEKIRI või muu dokument, mis on seotud tervishoiukontaktiga. NB! ServiceRequest pole profileeritud.)"
@@ -40,7 +40,7 @@ Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
 * actualPeriod ^short = "When encounter started and ended? (ee TEGELIK PERIOOD. Millal kontakt algas ja lõppes)"
 * location.location only Reference(EEBaseLocation)
 * location ^short = "Physical location of encounter (ee Füüsiline asukoht kus kontakt toimus (Muuta SPD-referentsiks kui valmis!)"
-* reason ^short = "Reason(s) for encounter (ee Põhjused, miks tervishoiukontakt toimus)"
+* reason ^short = "Reason(s) for encounter (ee Põhjused, miks tervishoiukontakt toimus? VÕI patsiendi seisund haiglast väljakirjutamisel? Sliceda?)"
 //* reason.value only CodeableReference(Condition)
 * diagnosis ^short = "All diagnosis that are related to this encounter (ee Kõik diagnoosid, mis on seotud tervishoiukontaktiga.)"
 //* diagnosis.condition only CodeableReference(Condition)
@@ -48,6 +48,8 @@ Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
 * serviceProvider 1..1
 * serviceProvider ^short = "Use SPD when it is published! (ee TTO, kelle juures Tervishoiukontakt toimus.)"
 * admission ^short = "Haiglaravi lõppemise tulemus - seisund, kuhu (koju/teise ttosse), asukoht, vabatekst (!?); (kas re-admissioniga võiks lahendada esmane/korduv?)"
+* admission.destination ^short = "(ee Täpsustus Patsiendi suundumisest haiglast väljakirjutamisel. SPD viide!)"
+* admission.dischargeDisposition ^short = "(ee KUHU patsient suunati: koju, teise haiglasse vm)"
 * episodeOfCare ^short = "EoC that is related to this encounter (ee Raviepisood, millega see kontakt seotud on)"
 * episodeOfCare 1..1 
 * specialArrangement 0..0

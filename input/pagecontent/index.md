@@ -9,18 +9,26 @@ This IG source code is available in [GitHub](https://github.com/TEHIK-EE/ig-ee-s
 [//]: # (REMOVE_ME: Needed only for this specific IG starter)
 ### How to start
 
-1. Copy project and rename project.
-1. Replace this IG specific values: look for comments marked **REPLACE_ME:**
-1. Remove unnecessary pages, fsh files etc., look for comments marked **REMOVE_ME:**
-1. Add domain specific profiles, markdown pages etc.
-1. Change alias.fsh and include your domain specific values, please follow the naming pattern.
+````markdown
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+````
 
-[//]: # (REMOVE_ME: Needed only for this specific IG starter)
-### Learning resources
-- [FSH starter guide](https://fshschool.org/) (describes how to start with IG development using FSH)
-- [FHIR Shorthand (FSH) documentation](https://build.fhir.org/ig/HL7/fhir-shorthand/)
-- [IG guidance](https://build.fhir.org/ig/FHIR/ig-guidance/) (describes how to style IG, structure and manage content, best practices, etc.)
-- [IG publisher documentation](https://confluence.hl7.org/spaces/FHIR/pages/35718627/IG+Publisher+Documentation) 
+```html
+<div class="mermaid">
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</div>
+```
+
 
 [//]: # (REMOVE_ME: Needed only for this specific IG starter)
 ### Structure

@@ -26,7 +26,7 @@ Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
 * serviceType ^short = "AMB.teenuste loend?"
 * subject only Reference($ee-mpi-patient or EEBasePatient)
 //* basedOn only Reference(ServiceRequest)
-* basedOn ^short = "Refferral or other document that is related to this encounter. (ee SAATEKIRI või muu dokument, mis on seotud tervishoiukontaktiga.)"
+* basedOn ^short = "Refferral or other document that is related to this encounter. (ee SAATEKIRI või muu dokument, mis on seotud tervishoiukontaktiga. NB! ServiceRequest pole profileeritud.)"
 * participant.actor only Reference(EEBasePractitioner or EEBaseRelatedPerson or EEBasePractitionerRole)
 * participant ^short = "Use references to SPD when it is published! (ee Tervishoiukontakti osalejad PEAKSID tulema SPD-st, siis kui see avaldatud on. SLICE muu abipersonal!))"
 * actualPeriod ^short = "When encounter started and ended? (ee TEGELIK PERIOOD. Millal kontakt algas ja lõppes)"

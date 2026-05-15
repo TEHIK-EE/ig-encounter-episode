@@ -10,3 +10,4 @@ Alias: $sct = http://snomed.info/sct
 
 Alias: $ee-mpi-patient = https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified
 Alias: $amb-teenused = https://fhir.ee/CodeSystem/ambulatoorsed-vastuvotud
+Alias: $arrival-mode = http://terminology.hl7.org/CodeSystem/v2-0430

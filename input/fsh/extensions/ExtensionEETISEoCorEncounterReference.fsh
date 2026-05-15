@@ -1,7 +1,7 @@
 Extension: ExtensionEETISEoCorEncounterReference
 Id: ee-tis-eoc-or-encounter-reference
 Title: "EoC or Encounter reference"
-Description: "Extension for the need of referencing episode of care or encounter in EETISEpisodeOfCare profile"
+Description: "Extension for the need of referencing episode of care or encounter"
 Parent: http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 * ^version = "1.0.0"
 * ^status = #draft

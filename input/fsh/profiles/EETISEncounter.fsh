@@ -36,7 +36,9 @@ Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
 //* basedOn only Reference(ServiceRequest)
 * basedOn ^short = "Refferral or other document that is related to this encounter. (ee SAATEKIRI või muu dokument, mis on seotud tervishoiukontaktiga. NB! ServiceRequest pole profileeritud.)"
 * participant.actor only Reference(EEBasePractitioner or EEBaseRelatedPerson or EEBasePractitionerRole)
+* participant.actor.type ^short = "(ee Osaluse tüüp. NB! vaja uut loendit? |sotsiaaltöötaja|,|tõlk|,|kogemusnõustaja| jne)"
 * participant ^short = "Use references to SPD when it is published! (ee Tervishoiukontakti osalejad PEAKSID tulema SPD-st, siis kui see avaldatud on. SLICE muu abipersonal!))"
+* participant.period ^short = "(ee Osaluse periood. Kui kaua osaleja ja patsient kontaktis olid.)"
 * actualPeriod ^short = "When encounter started and ended? (ee TEGELIK PERIOOD. Millal kontakt algas ja lõppes)"
 * location.location only Reference(EEBaseLocation)
 * location ^short = "Physical location of encounter (ee Füüsiline asukoht kus kontakt toimus (Muuta SPD-referentsiks kui valmis!)"

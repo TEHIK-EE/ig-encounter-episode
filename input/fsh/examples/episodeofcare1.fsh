@@ -5,8 +5,10 @@ Title: "Example of episode of care"
 Description: "Näidis raviepisoodist: ambulatoorne uroloogia raviepisood, mis on seotud ühe tervishoiukontaktiga."
 * meta.profile = "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-episode-of-care"
 * meta.versionId = "1"
-* extension.url = "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-eoc-or-encounter-reference"
-* extension.valueReference = Reference(Encounter/encounter1)
+* extension[0].url = "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-eoc-or-encounter-reference"
+* extension[=].valueReference = Reference(Encounter/encounter1)
+* extension[+].url = "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-summary"
+* extension[=].valueString = "peavalupatsient"
 * identifier[0].system = "https://fhir.ee/CodeSystem/tto-local-episode-identifier"
 * identifier[0].value = "EPI-TTO-2024-0042"
 * identifier[+].system = "https://fhir.ee/CodeSystem/tis-episode-identifier"

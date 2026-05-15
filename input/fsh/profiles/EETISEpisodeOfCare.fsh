@@ -6,9 +6,10 @@ Description: "A profile for basic Episode of Care.(ee RAVIEPISOOD)"
 * meta.versionId ^short = "versiooni identifikaator. Automaatne versiooninumber, mis muutub iga andmekirje muudatusega (nt staatus, kuupäev, jne). "
 * meta.versionId 1..1
 * meta.security ^short = "Konfidentsiaalsus slice? patsiendile/arstile/eestkostjale"
-* text ^short = "Episoodi vabatekstiline nimetus arsti poolt.TTO poolt pandud vabatekstiline nimetus. Väljakuvamise vaatest patsiendile - kui see on olemas, siis kuvada seda (on inimkeelsem patsiendile)."
+//* text ^short = "Episoodi vabatekstiline nimetus arsti poolt.TTO poolt pandud vabatekstiline nimetus. Väljakuvamise vaatest patsiendile - kui see on olemas, siis kuvada seda (on inimkeelsem patsiendile)."
 * extension contains
-    ExtensionEETISEoCorEncounterReference named relations 0..*
+    ExtensionEETISEoCorEncounterReference named relations 0..* and
+    ExtensionEETISSummary named eocName 0..1
 * identifier ^short = "Kas see oleks vaja sliceda?"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"

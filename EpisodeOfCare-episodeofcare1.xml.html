@@ -1,0 +1,361 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Example of episode of care - XML Representation - TEHIK FHIR IG Encounter and Episode of Care v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/tehik.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.8"}
+    h3,h4,h5,h6{--heading-prefix:"7.8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+  <a id="project-logo" no-external="true" href="https://www.tehik.ee">
+    <img height="70" src="assets/images/tehik-logo.png"/>
+  </a>
+</div>
+
+<!-- Right logo - for example the FHIR logo --><!-- Make sure you have authorization to use the FHIR logo --><!--
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+  </div>
+-->
+<!-- search icon - if you want -->
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="search.html"><img alt="Search FHIR"
+      src="assets/images/search.png"/></a>
+</div>
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">TEHIK FHIR IG Encounter and Episode of Care</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - draft
+
+
+
+  Estonia
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="page1.html">Page1</a>
+      </li>
+      <li>
+        <a href="page2.html">Page2</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">About
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="contacts.html">Contacts</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example of episode of care</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">TEHIK FHIR IG Encounter and Episode of Care - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir.ee/encounter-episode/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="EpisodeOfCare-episodeofcare1.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="EpisodeOfCare-episodeofcare1.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Example of episode of care - XML Representation</h2>
+
+
+<p><a href="EpisodeOfCare-episodeofcare1.xml" no-download="true">Raw xml</a> | <a href="EpisodeOfCare-episodeofcare1.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare">EpisodeOfCare</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/resource.html#XEpisodeOfCare.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;episodeofcare1&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/resource.html#XEpisodeOfCare.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#XMeta.versionId">versionId</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#XMeta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-episode-of-care&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/resource.html#XEpisodeOfCare.meta">meta</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/domainresource.html#XEpisodeOfCare.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: EpisodeOfCare episodeofcare1&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;episodeofcare1&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcepisodeofcare1&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;version: 1&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-ee-tis-episode-of-care.html&quot;&gt;EE TIS Episode of Care&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;EoC or Encounter reference&lt;/b&gt;: &lt;a href=&quot;Encounter-encounter1.html&quot;&gt;Encounter: extension = Rutiinne ambulatoorne visiit. Patsient kaebas peavalude üle, määrati täiendav uuring.,Ambulance (arrivalMode#A); identifier = https://fhir.ee/CodeSystem/local-identifier#K-2024-0042,https://fhir.ee/CodeSystem/local-identifier#TIS-2024-0042; status = discharged; class = ambulatory; priority = routine; type = Visiit,Esmane; actualPeriod = 2024-03-15 09:02:00+0200 --&amp;gt; 2024-03-15 09:33:00+0200; plannedStartDate = 2024-03-15 09:00:00+0200; plannedEndDate = 2024-03-15 09:30:00+0200&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Any free form text needed&lt;/b&gt;: peavalupatsient&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://fhir.ee/CodeSystem/tto-local-episode-identifier&lt;/code&gt;/EPI-TTO-2024-0042, &lt;code&gt;https://fhir.ee/CodeSystem/tis-episode-identifier&lt;/code&gt;/TIS-EPI-2024-0042&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;h3&gt;StatusHistories&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Period&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Planned&lt;/td&gt;&lt;td&gt;2024-03-10 10:00:00+0200 --&amp;gt; 2024-03-15 09:02:00+0200&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{https://fhir.ee/CodeSystem/eoc-episoodi-tyyp ambulatoorne}&quot;&gt;Ambulatoorne raviepisood&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;reason&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;use&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/encounter-reason-use CC}&quot;&gt;Chief Complaint&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Values&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Reference&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;Condition/cond-peavalu&quot;&gt;Condition/cond-peavalu&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;diagnosis&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Conditions&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Reference&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;Condition/cond-peavalu&quot;&gt;Condition/cond-peavalu&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;use&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/diagnosis-role final}&quot;&gt;Final&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=&quot;Patient/pat-mari-tamm&quot;&gt;Patient/pat-mari-tamm&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=&quot;Organization/org-tallinna-haigla&quot;&gt;Organization/org-tallinna-haigla&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2024-03-15 09:02:00+0200 --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;careManager&lt;/b&gt;: &lt;a href=&quot;Practitioner/prac-jaan-mets&quot;&gt;Practitioner/prac-jaan-mets&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R5/domainresource.html#XEpisodeOfCare.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/domainresource.html#XEpisodeOfCare.extension">extension</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>=&quot;https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-eoc-or-encounter-reference&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">valueReference</a>&gt;<a href="Encounter-encounter1.html" style="color: Maroon">&#x1F517;</a> 
+      &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Encounter/encounter1&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">valueReference</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/domainresource.html#XEpisodeOfCare.extension">extension</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/domainresource.html#XEpisodeOfCare.extension">extension</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>=&quot;https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-summary&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;peavalupatsient&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/domainresource.html#XEpisodeOfCare.extension">extension</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;https://fhir.ee/CodeSystem/tto-local-episode-identifier&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EPI-TTO-2024-0042&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.identifier">identifier</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;https://fhir.ee/CodeSystem/tis-episode-identifier&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;TIS-EPI-2024-0042&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.identifier">identifier</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.statusHistory">statusHistory</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.statusHistory.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;planned&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.statusHistory.period">period</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Period#XPeriod.start">start</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2024-03-10T10:00:00+02:00&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Period#XPeriod.end">end</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2024-03-15T09:02:00+02:00&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.statusHistory.period">period</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.statusHistory">statusHistory</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.type">type</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;https://fhir.ee/CodeSystem/eoc-episoodi-tyyp&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;ambulatoorne&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ambulatoorne raviepisood&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.type">type</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.reason">reason</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.reason.use">use</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>
+                <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/encounter-reason-use&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;CC&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Chief Complaint&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.reason.use">use</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.reason.value">value</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.reference">reference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Condition/cond-peavalu&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.reference">reference</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.reason.value">value</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.reason">reason</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.diagnosis">diagnosis</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.diagnosis.condition">condition</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.reference">reference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Condition/cond-peavalu&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.reference">reference</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.diagnosis.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.diagnosis.use">use</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/diagnosis-role&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Final&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.diagnosis.use">use</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.diagnosis">diagnosis</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.patient">patient</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Patient/pat-mari-tamm&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.patient">patient</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.managingOrganization">managingOrganization</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Organization/org-tallinna-haigla&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.managingOrganization">managingOrganization</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.period">period</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Period#XPeriod.start">start</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2024-03-15T09:02:00+02:00&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.period">period</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.careManager">careManager</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Practitioner/prac-jaan-mets&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare.careManager">careManager</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R5/episodeofcare.html#XEpisodeOfCare">EpisodeOfCare</a>&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.tehik.ee">TEHIK</a>.  Package ee.fhir.encounterepisode#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, May 15, 2026 11:34+0000">2026-05-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

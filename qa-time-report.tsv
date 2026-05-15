@@ -1,0 +1,23 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-ee.fhir.encounterepisode.json	6302	-	0	0	0	0	0	0	8	70	0	0	0	0	0	0	0	1	0	0	48	59	0	0	0	2	0	0
+fsh-generated/resources/Encounter-encounter1.json	4044	13	0	0	2	0	0	0	1	618	0	0	0	0	0	0	0	0	0	0	18	25	0	0	0	0	0	0
+fsh-generated/resources/EpisodeOfCare-episodeofcare1.json	2308	7	0	0	0	0	0	0	1	28	0	0	0	0	0	0	0	0	0	0	16	16	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-EETISEncounterLM.json	10068	9	0	43	0	0	0	0	0	105	0	0	0	0	0	0	0	0	0	0	99	1934	1	1	0	9	0	0
+fsh-generated/resources/StructureDefinition-ee-tis-encounter-stationary.json	7694	9	0	81	0	0	1	0	0	71	0	0	1	0	0	0	0	2	0	0	285	627	0	0	0	16	0	1
+fsh-generated/resources/StructureDefinition-ee-tis-encounter.json	9405	9	0	77	0	0	0	0	0	44	0	0	0	0	0	0	0	1	0	0	274	443	0	0	0	15	1	1
+fsh-generated/resources/StructureDefinition-ee-tis-eoc-or-encounter-reference.json	2048	4	0	8	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	81	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-ee-tis-episode-of-care.json	7005	6	0	29	0	0	0	0	0	27	0	0	0	0	0	0	0	0	0	0	164	291	0	0	0	8	0	1
+fsh-generated/resources/StructureDefinition-ee-tis-summary.json	1586	3	0	7	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	26	76	0	0	0	1	0	0
+/fsh-generated/includes/menu.xml	1726	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/fsh-generated/includes/fsh-link-references.md	529	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/page2.md	87	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/page1.md	290	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/contacts.md	373	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/search.xml	446	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	31	0	0	0	0	0	0
+/input/pagecontent/downloads.xml	1148	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	23	0	0	0	0	0	0
+/input/pagecontent/index.md	1283	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/images/robots.txt	24	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/temp/pages/_includes/artifacts.xml	5523	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	0	0	0	0	0	0	0

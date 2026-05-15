@@ -1,0 +1,37 @@
+# ee.fhir.encounterepisode#0.1.0: TEHIK FHIR IG Encounter and Episode of Care
+
+## Pages
+
+* [Home](index.md)
+* [Diagram examples](page1.md)
+* [Artifacts Summary](artifacts.md)
+* [Contacts](contacts.md)
+* [Downloads](downloads.md)
+* [Sample page 2](page2.md)
+* [Search](search.md)
+
+## Resources
+
+### Logicals
+
+* [Tervishoiukontakt. TEST](StructureDefinition-EETISEncounterLM.md)
+
+### Resource Profiles
+
+* [EE TIS Stationary Encounter](StructureDefinition-ee-tis-encounter-stationary.md)
+* [EE TIS Encounter](StructureDefinition-ee-tis-encounter.md)
+* [EE TIS Episode of Care](StructureDefinition-ee-tis-episode-of-care.md)
+
+### Extensions
+
+* [EoC or Encounter reference](StructureDefinition-ee-tis-eoc-or-encounter-reference.md)
+* [Any free form text needed](StructureDefinition-ee-tis-summary.md)
+
+### ImplementationGuides
+
+* [TEHIK FHIR IG Encounter and Episode of Care](index.md)
+
+### Examples
+
+* [encounter1 (Encounter)](Encounter-encounter1.md)
+* [episodeofcare1 (EpisodeOfCare)](EpisodeOfCare-episodeofcare1.md)

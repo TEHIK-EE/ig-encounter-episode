@@ -1,0 +1,49 @@
+[{
+  "id" : "ee.fhir.encounterepisode",
+  "type" : "ImplementationGuide",
+  "url" : "https://fhir.ee/encounter-episode/ImplementationGuide/ee.fhir.encounterepisode",
+  "version" : "0.1.0",
+  "name" : "TEHIKIGEncounterandEpisodeofCare"
+},
+{
+  "id" : "EETISEncounterLM",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/encounter-episode/StructureDefinition/EETISEncounterLM",
+  "version" : "0.1.0",
+  "name" : "EETISEncounterLM"
+},
+{
+  "id" : "ee-tis-encounter",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-encounter",
+  "version" : "0.1.0",
+  "name" : "EETISEncounter"
+},
+{
+  "id" : "ee-tis-encounter-stationary",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-encounter-stationary",
+  "version" : "0.1.0",
+  "name" : "EETISEncounterStationary"
+},
+{
+  "id" : "ee-tis-eoc-or-encounter-reference",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-eoc-or-encounter-reference",
+  "version" : "0.1.0",
+  "name" : "ExtensionEETISEoCorEncounterReference"
+},
+{
+  "id" : "ee-tis-episode-of-care",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-episode-of-care",
+  "version" : "0.1.0",
+  "name" : "EETISEpisodeOfCare"
+},
+{
+  "id" : "ee-tis-summary",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-summary",
+  "version" : "0.1.0",
+  "name" : "ExtensionEETISSummary"
+}]

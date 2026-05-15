@@ -1,0 +1,537 @@
+{
+  "date" : "Fri, 15 May, 2026 11:34:02 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-ee.fhir.encounterepisode.json",
+    "size" : 6302,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 62,
+      "length" : 10
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 62,
+      "length" : 8
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 62,
+      "length" : 70
+    },
+    {
+      "activity" : "validate",
+      "start" : 72,
+      "length" : 4532
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 77,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 83,
+      "length" : 48
+    },
+    {
+      "activity" : "generate2",
+      "start" : 86,
+      "length" : 59
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 103,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Encounter-encounter1.json",
+    "size" : 4044,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 61,
+      "length" : 13
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 62,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 62,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 62,
+      "length" : 618
+    },
+    {
+      "activity" : "validate",
+      "start" : 77,
+      "length" : 4176
+    },
+    {
+      "activity" : "generate1",
+      "start" : 83,
+      "length" : 18
+    },
+    {
+      "activity" : "generate2",
+      "start" : 86,
+      "length" : 25
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/EpisodeOfCare-episodeofcare1.json",
+    "size" : 2308,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 61,
+      "length" : 7
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 62,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 63,
+      "length" : 28
+    },
+    {
+      "activity" : "validate",
+      "start" : 81,
+      "length" : 2199
+    },
+    {
+      "activity" : "generate1",
+      "start" : 83,
+      "length" : 16
+    },
+    {
+      "activity" : "generate2",
+      "start" : 86,
+      "length" : 16
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-EETISEncounterLM.json",
+    "size" : 10068,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 61,
+      "length" : 9
+    },
+    {
+      "activity" : "load",
+      "start" : 62,
+      "length" : 12
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 62,
+      "length" : 43
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 63,
+      "length" : 105
+    },
+    {
+      "activity" : "validate",
+      "start" : 63,
+      "length" : 1933
+    },
+    {
+      "activity" : "generate1",
+      "start" : 83,
+      "length" : 99
+    },
+    {
+      "activity" : "generate2",
+      "start" : 86,
+      "length" : 1934
+    },
+    {
+      "activity" : "generate2",
+      "start" : 90,
+      "length" : 824
+    },
+    {
+      "activity" : "generateLogicals",
+      "start" : 93,
+      "length" : 1
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 94,
+      "length" : 1
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 103,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-tis-encounter-stationary.json",
+    "size" : 7694,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 61,
+      "length" : 9
+    },
+    {
+      "activity" : "load",
+      "start" : 62,
+      "length" : 7
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 62,
+      "length" : 81
+    },
+    {
+      "activity" : "loadDepInfo",
+      "start" : 62,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 63,
+      "length" : 71
+    },
+    {
+      "activity" : "validate",
+      "start" : 65,
+      "length" : 1130
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 77,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 77,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 83,
+      "length" : 285
+    },
+    {
+      "activity" : "generate2",
+      "start" : 88,
+      "length" : 627
+    },
+    {
+      "activity" : "generate2",
+      "start" : 91,
+      "length" : 540
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 103,
+      "length" : 16
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 111,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-tis-encounter.json",
+    "size" : 9405,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 61,
+      "length" : 9
+    },
+    {
+      "activity" : "load",
+      "start" : 62,
+      "length" : 8
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 62,
+      "length" : 77
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 63,
+      "length" : 44
+    },
+    {
+      "activity" : "validate",
+      "start" : 66,
+      "length" : 939
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 77,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 84,
+      "length" : 274
+    },
+    {
+      "activity" : "generate2",
+      "start" : 89,
+      "length" : 443
+    },
+    {
+      "activity" : "generate2",
+      "start" : 91,
+      "length" : 532
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 103,
+      "length" : 15
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 111,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 111,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-tis-eoc-or-encounter-reference.json",
+    "size" : 2048,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 62,
+      "length" : 4
+    },
+    {
+      "activity" : "load",
+      "start" : 62,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 62,
+      "length" : 8
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 63,
+      "length" : 8
+    },
+    {
+      "activity" : "validate",
+      "start" : 67,
+      "length" : 3520
+    },
+    {
+      "activity" : "generate1",
+      "start" : 84,
+      "length" : 22
+    },
+    {
+      "activity" : "generate2",
+      "start" : 89,
+      "length" : 81
+    },
+    {
+      "activity" : "generate2",
+      "start" : 92,
+      "length" : 53
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 103,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-tis-episode-of-care.json",
+    "size" : 7005,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 62,
+      "length" : 6
+    },
+    {
+      "activity" : "load",
+      "start" : 62,
+      "length" : 6
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 62,
+      "length" : 29
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 63,
+      "length" : 27
+    },
+    {
+      "activity" : "validate",
+      "start" : 71,
+      "length" : 776
+    },
+    {
+      "activity" : "generate1",
+      "start" : 84,
+      "length" : 164
+    },
+    {
+      "activity" : "generate2",
+      "start" : 90,
+      "length" : 291
+    },
+    {
+      "activity" : "generate2",
+      "start" : 92,
+      "length" : 217
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 103,
+      "length" : 8
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 111,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ee-tis-summary.json",
+    "size" : 1586,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 62,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 62,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 62,
+      "length" : 7
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 63,
+      "length" : 7
+    },
+    {
+      "activity" : "validate",
+      "start" : 72,
+      "length" : 374
+    },
+    {
+      "activity" : "generate1",
+      "start" : 84,
+      "length" : 26
+    },
+    {
+      "activity" : "generate2",
+      "start" : 90,
+      "length" : 76
+    },
+    {
+      "activity" : "generate2",
+      "start" : 92,
+      "length" : 42
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 103,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 1726,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 90,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 529
+  },
+  {
+    "name" : "/input/pagecontent/page2.md",
+    "size" : 87
+  },
+  {
+    "name" : "/input/pagecontent/page1.md",
+    "size" : 290
+  },
+  {
+    "name" : "/input/pagecontent/contacts.md",
+    "size" : 373
+  },
+  {
+    "name" : "/input/pagecontent/search.xml",
+    "size" : 446,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 90,
+      "length" : 31
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/downloads.xml",
+    "size" : 1148,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 90,
+      "length" : 23
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 1283
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 140
+  },
+  {
+    "name" : "/input/images",
+    "size" : 0,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 90,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/images/robots.txt",
+    "size" : 24
+  },
+  {
+    "name" : "/temp/pages/_includes/artifacts.xml",
+    "size" : 5523
+  }]
+}

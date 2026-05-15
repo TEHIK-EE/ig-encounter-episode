@@ -1,0 +1,205 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/encounter-episode/Encounter/encounter1> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "encounter1"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-encounter"^^xsd:anyURI ;
+       fhir:l <https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter encounter1</b></p><a name=\"encounter1\"> </a><a name=\"hcencounter1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-tis-encounter.html\">EE TIS Encounter</a></p></div><p><b>Any free form text needed</b>: Rutiinne ambulatoorne visiit. Patsient kaebas peavalude üle, määrati täiendav uuring.</p><p><b>EEBase ModeOfArrival</b>: <a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v2-0430.html#v2-0430-A\">arrivalMode: A</a> (Ambulance)</p><p><b>identifier</b>: <code>https://fhir.ee/CodeSystem/local-identifier</code>/K-2024-0042, <code>https://fhir.ee/CodeSystem/local-identifier</code>/TIS-2024-0042</p><p><b>status</b>: Discharged</p><p><b>class</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span></p><p><b>priority</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActPriority R}\">routine</span></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/encounter-type visiit}\">Visiit</span>, <span title=\"Codes:{https://fhir.ee/CodeSystem/encounter-recurrence esmane}\">Esmane</span></p><h3>ServiceTypes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://fhir.ee/CodeSystem/ambulatoorsed-vastuvotud AUR001}\">Uroloogi vastuvõtt</span></td></tr></table><p><b>subject</b>: <a href=\"Patient/pat-mari-tamm\">Patient/pat-mari-tamm</a></p><p><b>episodeOfCare</b>: <a href=\"EpisodeOfCare/eoc-2024-001\">EpisodeOfCare/eoc-2024-001</a></p><p><b>basedOn</b>: <a href=\"ServiceRequest/sr-2024-007\">ServiceRequest/sr-2024-007</a></p><p><b>serviceProvider</b>: <a href=\"Organization/org-tallinna-haigla\">Organization/org-tallinna-haigla</a></p><blockquote><p><b>participant</b></p><p><b>period</b>: 2024-03-15 09:02:00+0200 --&gt; 2024-03-15 09:30:00+0200</p><p><b>actor</b>: <a href=\"Practitioner/prac-jaan-mets\">Practitioner/prac-jaan-mets</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title=\"Codes:\">Translator</span></p><p><b>period</b>: 2024-03-15 09:02:00+0200 --&gt; 2024-03-15 09:20:00+0200</p><p><b>actor</b>: <a href=\"PractitionerRole/pr-role-001\">PractitionerRole/pr-role-001</a></p></blockquote><p><b>actualPeriod</b>: 2024-03-15 09:02:00+0200 --&gt; 2024-03-15 09:33:00+0200</p><p><b>plannedStartDate</b>: 2024-03-15 09:00:00+0200</p><p><b>plannedEndDate</b>: 2024-03-15 09:30:00+0200</p><blockquote><p><b>reason</b></p><h3>Values</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition/cond-peavalu\">Condition/cond-peavalu</a></td></tr></table></blockquote><blockquote><p><b>diagnosis</b></p><h3>Conditions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition/cond-peavalu\">Condition/cond-peavalu</a></td></tr></table><p><b>use</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/diagnosis-role AD}\">Admission diagnosis</span></p></blockquote><h3>Admissions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>DischargeDisposition</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/discharge-disposition home}\">Home</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location/loc-kabinet-12\">Location/loc-kabinet-12</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-summary"^^xsd:anyURI ;
+       fhir:l <https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-summary>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Rutiinne ambulatoorne visiit. Patsient kaebas peavalude üle, määrati täiendav uuring."
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://fhir.ee/base/StructureDefinition/ee-mode-of-arrival"^^xsd:anyURI ;
+       fhir:l <https://fhir.ee/base/StructureDefinition/ee-mode-of-arrival>
+     ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0430"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v2-0430>
+       ] ;
+       fhir:code [ fhir:v "A" ] ;
+       fhir:display [ fhir:v "Ambulance" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "https://fhir.ee/CodeSystem/local-identifier"^^xsd:anyURI ;
+       fhir:l <https://fhir.ee/CodeSystem/local-identifier>
+     ] ;
+     fhir:value [ fhir:v "K-2024-0042" ]
+  ] [
+     fhir:system [
+       fhir:v "https://fhir.ee/CodeSystem/local-identifier"^^xsd:anyURI ;
+       fhir:l <https://fhir.ee/CodeSystem/local-identifier>
+     ] ;
+     fhir:value [ fhir:v "TIS-2024-0042" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "discharged"] ; # 
+  fhir:class ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
+       fhir:code [ fhir:v "AMB" ] ;
+       fhir:display [ fhir:v "ambulatory" ]
+     ] )
+  ] ) ; # 
+  fhir:priority [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActPriority"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActPriority>
+       ] ;
+       fhir:code [ fhir:v "R" ] ;
+       fhir:display [ fhir:v "routine" ]
+     ] )
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://fhir.ee/CodeSystem/encounter-type"^^xsd:anyURI ;
+         fhir:l <https://fhir.ee/CodeSystem/encounter-type>
+       ] ;
+       fhir:code [ fhir:v "visiit" ] ;
+       fhir:display [ fhir:v "Visiit" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://fhir.ee/CodeSystem/encounter-recurrence"^^xsd:anyURI ;
+         fhir:l <https://fhir.ee/CodeSystem/encounter-recurrence>
+       ] ;
+       fhir:code [ fhir:v "esmane" ] ;
+       fhir:display [ fhir:v "Esmane" ]
+     ] )
+  ] ) ; # 
+  fhir:serviceType ( [
+     fhir:concept [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://fhir.ee/CodeSystem/ambulatoorsed-vastuvotud"^^xsd:anyURI ;
+           fhir:l <https://fhir.ee/CodeSystem/ambulatoorsed-vastuvotud>
+         ] ;
+         fhir:code [ fhir:v "AUR001" ] ;
+         fhir:display [ fhir:v "Uroloogi vastuvõtt" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:l <https://fhir.ee/encounter-episode/Patient/pat-mari-tamm> ;
+     fhir:reference [ fhir:v "Patient/pat-mari-tamm" ]
+  ] ; # 
+  fhir:episodeOfCare ( [
+     fhir:l <https://fhir.ee/encounter-episode/EpisodeOfCare/eoc-2024-001> ;
+     fhir:reference [ fhir:v "EpisodeOfCare/eoc-2024-001" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:l <https://fhir.ee/encounter-episode/ServiceRequest/sr-2024-007> ;
+     fhir:reference [ fhir:v "ServiceRequest/sr-2024-007" ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:l <https://fhir.ee/encounter-episode/Organization/org-tallinna-haigla> ;
+     fhir:reference [ fhir:v "Organization/org-tallinna-haigla" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:period [
+       fhir:start [ fhir:v "2024-03-15T09:02:00+02:00"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2024-03-15T09:30:00+02:00"^^xsd:dateTime ]
+     ] ;
+     fhir:actor [
+       fhir:l <https://fhir.ee/encounter-episode/Practitioner/prac-jaan-mets> ;
+       fhir:reference [ fhir:v "Practitioner/prac-jaan-mets" ]
+     ]
+  ] [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:code [ fhir:v "translator" ] ;
+         fhir:display [ fhir:v "Translator" ]
+       ] )
+     ] ) ;
+     fhir:period [
+       fhir:start [ fhir:v "2024-03-15T09:02:00+02:00"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2024-03-15T09:20:00+02:00"^^xsd:dateTime ]
+     ] ;
+     fhir:actor [
+       fhir:l <https://fhir.ee/encounter-episode/PractitionerRole/pr-role-001> ;
+       fhir:reference [ fhir:v "PractitionerRole/pr-role-001" ]
+     ]
+  ] ) ; # 
+  fhir:actualPeriod [
+     fhir:start [ fhir:v "2024-03-15T09:02:00+02:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2024-03-15T09:33:00+02:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:plannedStartDate [ fhir:v "2024-03-15T09:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:plannedEndDate [ fhir:v "2024-03-15T09:30:00+02:00"^^xsd:dateTime] ; # 
+  fhir:reason ( [
+     fhir:value ( [
+       fhir:reference [
+         fhir:l <https://fhir.ee/encounter-episode/Condition/cond-peavalu> ;
+         fhir:reference [ fhir:v "Condition/cond-peavalu" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:diagnosis ( [
+     fhir:condition ( [
+       fhir:reference [
+         fhir:l <https://fhir.ee/encounter-episode/Condition/cond-peavalu> ;
+         fhir:reference [ fhir:v "Condition/cond-peavalu" ]
+       ]
+     ] ) ;
+     fhir:use ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/diagnosis-role"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/diagnosis-role>
+         ] ;
+         fhir:code [ fhir:v "AD" ] ;
+         fhir:display [ fhir:v "Admission diagnosis" ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:admission [
+     fhir:dischargeDisposition [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/discharge-disposition"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/discharge-disposition>
+         ] ;
+         fhir:code [ fhir:v "home" ] ;
+         fhir:display [ fhir:v "Home" ]
+       ] )
+     ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:l <https://fhir.ee/encounter-episode/Location/loc-kabinet-12> ;
+       fhir:reference [ fhir:v "Location/loc-kabinet-12" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

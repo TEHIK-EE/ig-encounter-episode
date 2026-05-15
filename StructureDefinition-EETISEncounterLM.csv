@@ -1,0 +1,47 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"EETISEncounterLM","EETISEncounterLM","","","",0,*,"","","","null {[]} {[]}
+","Tervishoiukontakt. TEST","TEST model for Encounter","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"EETISEncounterLM.TervishoiukontaktiID","EETISEncounterLM.TervishoiukontaktiID","","","",1,1,"","","","string {[]} {[]}
+","TIS poolt andmete vastuvõtmisel  genereeritud unikaalne identifikaator.","TIS poolt andmete vastuvõtmisel  genereeritud unikaalne identifikaator.","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.TervishoiukontaktiID",1,1,"",""
+"EETISEncounterLM.TTOISSiseneTervishoiukontaktiID","EETISEncounterLM.TTOISSiseneTervishoiukontaktiID","","","",1,1,"","","","string {[]} {[]}
+","TTO poolt genereeritud TTO IS-i Tervishoiukontakti ID vastavalt iga TTO IS-i sisese unikaalse nummerdamise reeglitele. ","TTO poolt genereeritud TTO IS-i Tervishoiukontakti ID vastavalt iga TTO IS-i sisese unikaalse nummerdamise reeglitele.","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.TTOISSiseneTervishoiukontaktiID",1,1,"",""
+"EETISEncounterLM.AndmeteKonfidentsiaalsus","EETISEncounterLM.AndmeteKonfidentsiaalsus","","","",1,1,"","","","string {[]} {[]}
+","Tervishoiukontakti andmete konfidentsiaalsus erinevatele rollidele.","Tervishoiukontakti andmete konfidentsiaalsus erinevatele rollidele.","","identifikaatorite domeen","","","","","","","",,,,,"",,,,"EETISEncounterLM.AndmeteKonfidentsiaalsus",1,1,"",""
+"EETISEncounterLM.TervishoiukontaktiVersiooniID","EETISEncounterLM.TervishoiukontaktiVersiooniID","","","",1,1,"","","","string {[]} {[]}
+","Automaatne versiooninumber, mis muutub iga andmekirje muudatusega (nt staatus, kuupäev, jne). ","Automaatne versiooninumber, mis muutub iga andmekirje muudatusega (nt staatus, kuupäev, jne).","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.TervishoiukontaktiVersiooniID",1,1,"",""
+"EETISEncounterLM.TervishoiukontaktiPlaneeritudPeriood","EETISEncounterLM.TervishoiukontaktiPlaneeritudPeriood","","","",0,1,"","","","string {[]} {[]}
+","Alguse- ja lõpukuupäev ning kellaaeg, millal Tervishoiukontakt on planeeritud toimuma.","Alguse- ja lõpukuupäev ning kellaaeg, millal Tervishoiukontakt on planeeritud toimuma.","","","","","","","","","",,,,,"",,,,"EETISEncounterLM.TervishoiukontaktiPlaneeritudPeriood",0,1,"",""
+"EETISEncounterLM.TervishoiukontaktiSubjekt","EETISEncounterLM.TervishoiukontaktiSubjekt","","","",1,1,"","","","Patient {[CanonicalType[https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified]]} {[]}
+","Patsient, kes on Tervishoiukontaktiga seotud.","Patsient, kes on Tervishoiukontaktiga seotud.","","","","","","","","","",,,,,"",,,,"EETISEncounterLM.TervishoiukontaktiSubjekt",1,1,"",""
+"EETISEncounterLM.TervishoiukontaktiOsalised","EETISEncounterLM.TervishoiukontaktiOsalised","","","",1,1,"","","","string {[]} {[]}
+","TTO-st isikud, kes osalesid Tervishoiukontaktis (nt arst, õde, dokumenteerija).","TTO-st isikud, kes osalesid Tervishoiukontaktis (nt arst, õde, dokumenteerija).","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.TervishoiukontaktiOsalised",1,1,"",""
+"EETISEncounterLM.MuuAbipersonalOsalised","EETISEncounterLM.MuuAbipersonalOsalised","","","",1,1,"","","","string {[]} {[]}
+","Muu abipersonal või osalised, kes Tervishoiukontaktiga seotud olid. Võimaldab Tervishoiukontakti andmestikku lisada isikuid, kes Tervishoiukontaktis on olulised välja tuua (nt tõlk, sotsiaaltöötaja, jne).","Muu abipersonal või osalised, kes Tervishoiukontaktiga seotud olid. Võimaldab Tervishoiukontakti andmestikku lisada isikuid, kes Tervishoiukontaktis on olulised välja tuua (nt tõlk, sotsiaaltöötaja, jne).","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.MuuAbipersonalOsalised",1,1,"",""
+"EETISEncounterLM.TervishoiukontaktiTeenusepakkuja","EETISEncounterLM.TervishoiukontaktiTeenusepakkuja","","","",1,1,"","","","string {[]} {[]}
+","tbc","tbc","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.TervishoiukontaktiTeenusepakkuja",1,1,"",""
+"EETISEncounterLM.TervishoiukontaktiToimumiseAsukoht","EETISEncounterLM.TervishoiukontaktiToimumiseAsukoht","","","",1,1,"","","","string {[]} {[]}
+","tbc","tbc","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.TervishoiukontaktiToimumiseAsukoht",1,1,"",""
+"EETISEncounterLM.TervishoiukontaktiStaatus","EETISEncounterLM.TervishoiukontaktiStaatus","","","",1,1,"","","","string {[]} {[]}
+","tbc","tbc","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.TervishoiukontaktiStaatus",1,1,"",""
+"EETISEncounterLM.TervishoiukontaktiLiik","EETISEncounterLM.TervishoiukontaktiLiik","","","",1,1,"","","","string {[]} {[]}
+","tbc","tbc","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.TervishoiukontaktiLiik",1,1,"",""
+"EETISEncounterLM.TervishoiukontaktiErakorralisus","EETISEncounterLM.TervishoiukontaktiErakorralisus","","","",1,1,"","","","string {[]} {[]}
+","tbc","tbc","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.TervishoiukontaktiErakorralisus",1,1,"",""
+"EETISEncounterLM.TervishoiukontaktiKlass","EETISEncounterLM.TervishoiukontaktiKlass","","","",1,1,"","","","string {[]} {[]}
+","tbc","tbc","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.TervishoiukontaktiKlass",1,1,"",""
+"EETISEncounterLM.TervishoiukontaktiTyyp","EETISEncounterLM.TervishoiukontaktiTyyp","","","",1,1,"","","","string {[]} {[]}
+","tbc","tbc","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.TervishoiukontaktiTyyp",1,1,"",""
+"EETISEncounterLM.TegelikPeriood","EETISEncounterLM.TegelikPeriood","","","",1,1,"","","","string {[]} {[]}
+","tbc","tbc","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.TegelikPeriood",1,1,"",""
+"EETISEncounterLM.SaabumiseViis","EETISEncounterLM.SaabumiseViis","","","",1,1,"","","","string {[]} {[]}
+","tbc","tbc","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.SaabumiseViis",1,1,"",""
+"EETISEncounterLM.Episood","EETISEncounterLM.Episood","","","",1,1,"","","","EpisodeOfCare {[CanonicalType[https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-episode-of-care]]} {[]}
+","tbc","tbc","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.Episood",1,1,"",""
+"EETISEncounterLM.TervishoiukontaktiDiagnoos","EETISEncounterLM.TervishoiukontaktiDiagnoos","","","",1,1,"","","","string {[]} {[]}
+","tbc","tbc","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.TervishoiukontaktiDiagnoos",1,1,"",""
+"EETISEncounterLM.HaiglaraviLoppemiseTulemus","EETISEncounterLM.HaiglaraviLoppemiseTulemus","","","",1,1,"","","","string {[]} {[]}
+","tbc","tbc","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.HaiglaraviLoppemiseTulemus",1,1,"",""
+"EETISEncounterLM.SaatekirjaAndmed","EETISEncounterLM.SaatekirjaAndmed","","","",1,1,"","","","string {[]} {[]}
+","tbc","tbc","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.SaatekirjaAndmed",1,1,"",""
+"EETISEncounterLM.TervishoiukontaktiKokkuvoteRavist","EETISEncounterLM.TervishoiukontaktiKokkuvoteRavist","","","",1,1,"","","","string {[]} {[]}
+","tbc","tbc","","vajadus","","","","","","","",,,,,"",,,,"EETISEncounterLM.TervishoiukontaktiKokkuvoteRavist",1,1,"",""

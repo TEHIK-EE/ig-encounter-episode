@@ -1,0 +1,85 @@
+{
+  "resourceType" : "EpisodeOfCare",
+  "id" : "episodeofcare1",
+  "meta" : {
+    "versionId" : "1",
+    "profile" : ["https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-episode-of-care"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EpisodeOfCare episodeofcare1</b></p><a name=\"episodeofcare1\"> </a><a name=\"hcepisodeofcare1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-tis-episode-of-care.html\">EE TIS Episode of Care</a></p></div><p><b>EoC or Encounter reference</b>: <a href=\"Encounter-encounter1.html\">Encounter: extension = Rutiinne ambulatoorne visiit. Patsient kaebas peavalude üle, määrati täiendav uuring.,Ambulance (arrivalMode#A); identifier = https://fhir.ee/CodeSystem/local-identifier#K-2024-0042,https://fhir.ee/CodeSystem/local-identifier#TIS-2024-0042; status = discharged; class = ambulatory; priority = routine; type = Visiit,Esmane; actualPeriod = 2024-03-15 09:02:00+0200 --&gt; 2024-03-15 09:33:00+0200; plannedStartDate = 2024-03-15 09:00:00+0200; plannedEndDate = 2024-03-15 09:30:00+0200</a></p><p><b>Any free form text needed</b>: peavalupatsient</p><p><b>identifier</b>: <code>https://fhir.ee/CodeSystem/tto-local-episode-identifier</code>/EPI-TTO-2024-0042, <code>https://fhir.ee/CodeSystem/tis-episode-identifier</code>/TIS-EPI-2024-0042</p><p><b>status</b>: Active</p><h3>StatusHistories</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td>Planned</td><td>2024-03-10 10:00:00+0200 --&gt; 2024-03-15 09:02:00+0200</td></tr></table><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/eoc-episoodi-tyyp ambulatoorne}\">Ambulatoorne raviepisood</span></p><blockquote><p><b>reason</b></p><p><b>use</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/encounter-reason-use CC}\">Chief Complaint</span></p><h3>Values</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition/cond-peavalu\">Condition/cond-peavalu</a></td></tr></table></blockquote><blockquote><p><b>diagnosis</b></p><h3>Conditions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition/cond-peavalu\">Condition/cond-peavalu</a></td></tr></table><p><b>use</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/diagnosis-role final}\">Final</span></p></blockquote><p><b>patient</b>: <a href=\"Patient/pat-mari-tamm\">Patient/pat-mari-tamm</a></p><p><b>managingOrganization</b>: <a href=\"Organization/org-tallinna-haigla\">Organization/org-tallinna-haigla</a></p><p><b>period</b>: 2024-03-15 09:02:00+0200 --&gt; (ongoing)</p><p><b>careManager</b>: <a href=\"Practitioner/prac-jaan-mets\">Practitioner/prac-jaan-mets</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-eoc-or-encounter-reference",
+    "valueReference" : {
+      "reference" : "Encounter/encounter1"
+    }
+  },
+  {
+    "url" : "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-summary",
+    "valueString" : "peavalupatsient"
+  }],
+  "identifier" : [{
+    "system" : "https://fhir.ee/CodeSystem/tto-local-episode-identifier",
+    "value" : "EPI-TTO-2024-0042"
+  },
+  {
+    "system" : "https://fhir.ee/CodeSystem/tis-episode-identifier",
+    "value" : "TIS-EPI-2024-0042"
+  }],
+  "status" : "active",
+  "statusHistory" : [{
+    "status" : "planned",
+    "period" : {
+      "start" : "2024-03-10T10:00:00+02:00",
+      "end" : "2024-03-15T09:02:00+02:00"
+    }
+  }],
+  "type" : [{
+    "coding" : [{
+      "system" : "https://fhir.ee/CodeSystem/eoc-episoodi-tyyp",
+      "code" : "ambulatoorne",
+      "display" : "Ambulatoorne raviepisood"
+    }]
+  }],
+  "reason" : [{
+    "use" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/encounter-reason-use",
+        "code" : "CC",
+        "display" : "Chief Complaint"
+      }]
+    },
+    "value" : [{
+      "reference" : {
+        "reference" : "Condition/cond-peavalu"
+      }
+    }]
+  }],
+  "diagnosis" : [{
+    "condition" : [{
+      "reference" : {
+        "reference" : "Condition/cond-peavalu"
+      }
+    }],
+    "use" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+        "code" : "final",
+        "display" : "Final"
+      }]
+    }
+  }],
+  "patient" : {
+    "reference" : "Patient/pat-mari-tamm"
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/org-tallinna-haigla"
+  },
+  "period" : {
+    "start" : "2024-03-15T09:02:00+02:00"
+  },
+  "careManager" : {
+    "reference" : "Practitioner/prac-jaan-mets"
+  }
+}

@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EETISEncounterLM"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition EETISEncounterLM</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM" title="TEST model for Encounter">EETISEncounterLM</a><a name="EETISEncounterLM"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tervishoiukontakt. TEST</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TervishoiukontaktiID" title="TIS poolt andmete vastuvõtmisel  genereeritud unikaalne identifikaator.">TervishoiukontaktiID</a><a name="EETISEncounterLM.TervishoiukontaktiID"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">TIS poolt andmete vastuvõtmisel  genereeritud unikaalne identifikaator.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TTOISSiseneTervishoiukontaktiID" title="TTO poolt genereeritud TTO IS-i Tervishoiukontakti ID vastavalt iga TTO IS-i sisese unikaalse nummerdamise reeglitele. ">TTOISSiseneTervishoiukontaktiID</a><a name="EETISEncounterLM.TTOISSiseneTervishoiukontaktiID"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">TTO poolt genereeritud TTO IS-i Tervishoiukontakti ID vastavalt iga TTO IS-i sisese unikaalse nummerdamise reeglitele. </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.AndmeteKonfidentsiaalsus" title="Tervishoiukontakti andmete konfidentsiaalsus erinevatele rollidele.">AndmeteKonfidentsiaalsus</a><a name="EETISEncounterLM.AndmeteKonfidentsiaalsus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tervishoiukontakti andmete konfidentsiaalsus erinevatele rollidele.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TervishoiukontaktiVersiooniID" title="Automaatne versiooninumber, mis muutub iga andmekirje muudatusega (nt staatus, kuupäev, jne). ">TervishoiukontaktiVersiooniID</a><a name="EETISEncounterLM.TervishoiukontaktiVersiooniID"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Automaatne versiooninumber, mis muutub iga andmekirje muudatusega (nt staatus, kuupäev, jne). </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TervishoiukontaktiPlaneeritudPeriood" title="Alguse- ja lõpukuupäev ning kellaaeg, millal Tervishoiukontakt on planeeritud toimuma.">TervishoiukontaktiPlaneeritudPeriood</a><a name="EETISEncounterLM.TervishoiukontaktiPlaneeritudPeriood"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Alguse- ja lõpukuupäev ning kellaaeg, millal Tervishoiukontakt on planeeritud toimuma.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TervishoiukontaktiSubjekt" title="Patsient, kes on Tervishoiukontaktiga seotud.">TervishoiukontaktiSubjekt</a><a name="EETISEncounterLM.TervishoiukontaktiSubjekt"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://fhir.ee/packages/mpi/1.1.1/site/StructureDefinition-ee-mpi-patient-verified.html" title="Patient">EEMPIPatientVerified</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patsient, kes on Tervishoiukontaktiga seotud.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TervishoiukontaktiOsalised" title="TTO-st isikud, kes osalesid Tervishoiukontaktis (nt arst, õde, dokumenteerija).">TervishoiukontaktiOsalised</a><a name="EETISEncounterLM.TervishoiukontaktiOsalised"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">TTO-st isikud, kes osalesid Tervishoiukontaktis (nt arst, õde, dokumenteerija).</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.MuuAbipersonalOsalised" title="Muu abipersonal või osalised, kes Tervishoiukontaktiga seotud olid. Võimaldab Tervishoiukontakti andmestikku lisada isikuid, kes Tervishoiukontaktis on olulised välja tuua (nt tõlk, sotsiaaltöötaja, jne).">MuuAbipersonalOsalised</a><a name="EETISEncounterLM.MuuAbipersonalOsalised"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Muu abipersonal või osalised, kes Tervishoiukontaktiga seotud olid. Võimaldab Tervishoiukontakti andmestikku lisada isikuid, kes Tervishoiukontaktis on olulised välja tuua (nt tõlk, sotsiaaltöötaja, jne).</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TervishoiukontaktiTeenusepakkuja" title="tbc">TervishoiukontaktiTeenusepakkuja</a><a name="EETISEncounterLM.TervishoiukontaktiTeenusepakkuja"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">tbc</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TervishoiukontaktiToimumiseAsukoht" title="tbc">TervishoiukontaktiToimumiseAsukoht</a><a name="EETISEncounterLM.TervishoiukontaktiToimumiseAsukoht"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">tbc</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TervishoiukontaktiStaatus" title="tbc">TervishoiukontaktiStaatus</a><a name="EETISEncounterLM.TervishoiukontaktiStaatus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">tbc</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TervishoiukontaktiLiik" title="tbc">TervishoiukontaktiLiik</a><a name="EETISEncounterLM.TervishoiukontaktiLiik"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">tbc</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TervishoiukontaktiErakorralisus" title="tbc">TervishoiukontaktiErakorralisus</a><a name="EETISEncounterLM.TervishoiukontaktiErakorralisus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">tbc</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TervishoiukontaktiKlass" title="tbc">TervishoiukontaktiKlass</a><a name="EETISEncounterLM.TervishoiukontaktiKlass"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">tbc</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TervishoiukontaktiTyyp" title="tbc">TervishoiukontaktiTyyp</a><a name="EETISEncounterLM.TervishoiukontaktiTyyp"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">tbc</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TegelikPeriood" title="tbc">TegelikPeriood</a><a name="EETISEncounterLM.TegelikPeriood"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">tbc</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.SaabumiseViis" title="tbc">SaabumiseViis</a><a name="EETISEncounterLM.SaabumiseViis"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">tbc</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.Episood" title="tbc">Episood</a><a name="EETISEncounterLM.Episood"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ee-tis-episode-of-care.html" title="EpisodeOfCare">EETISEpisodeOfCare</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">tbc</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TervishoiukontaktiDiagnoos" title="tbc">TervishoiukontaktiDiagnoos</a><a name="EETISEncounterLM.TervishoiukontaktiDiagnoos"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">tbc</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.HaiglaraviLoppemiseTulemus" title="tbc">HaiglaraviLoppemiseTulemus</a><a name="EETISEncounterLM.HaiglaraviLoppemiseTulemus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">tbc</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.SaatekirjaAndmed" title="tbc">SaatekirjaAndmed</a><a name="EETISEncounterLM.SaatekirjaAndmed"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">tbc</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EETISEncounterLM-definitions.html#EETISEncounterLM.TervishoiukontaktiKokkuvoteRavist" title="tbc">TervishoiukontaktiKokkuvoteRavist</a><a name="EETISEncounterLM.TervishoiukontaktiKokkuvoteRavist"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">tbc</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/encounter-episode/StructureDefinition/EETISEncounterLM"/>
+  <version value="0.1.0"/>
+  <name value="EETISEncounterLM"/>
+  <title value="Tervishoiukontakt. TEST"/>
+  <status value="draft"/>
+  <date value="2026-05-15T11:34:02+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.tehik.ee"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@tehik.ee"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="TEHIK Andmekorraldus"/>
+    <telecom>
+      <system value="email"/>
+      <value value="andmekorraldus@tehik.ee"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="TEST model for Encounter"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://fhir.ee/encounter-episode/StructureDefinition/EETISEncounterLM"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="5.0.0"/>
+    </extension>
+    <element id="EETISEncounterLM">
+      <path value="EETISEncounterLM"/>
+      <short value="Tervishoiukontakt. TEST"/>
+      <definition value="TEST model for Encounter"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiID">
+      <path value="EETISEncounterLM.TervishoiukontaktiID"/>
+      <short value="TIS poolt andmete vastuvõtmisel  genereeritud unikaalne identifikaator."/>
+      <definition value="TIS poolt andmete vastuvõtmisel  genereeritud unikaalne identifikaator."/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TervishoiukontaktiID"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TTOISSiseneTervishoiukontaktiID">
+      <path value="EETISEncounterLM.TTOISSiseneTervishoiukontaktiID"/>
+      <short value="TTO poolt genereeritud TTO IS-i Tervishoiukontakti ID vastavalt iga TTO IS-i sisese unikaalse nummerdamise reeglitele. "/>
+      <definition value="TTO poolt genereeritud TTO IS-i Tervishoiukontakti ID vastavalt iga TTO IS-i sisese unikaalse nummerdamise reeglitele."/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TTOISSiseneTervishoiukontaktiID"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.AndmeteKonfidentsiaalsus">
+      <path value="EETISEncounterLM.AndmeteKonfidentsiaalsus"/>
+      <short value="Tervishoiukontakti andmete konfidentsiaalsus erinevatele rollidele."/>
+      <definition value="Tervishoiukontakti andmete konfidentsiaalsus erinevatele rollidele."/>
+      <requirements value="identifikaatorite domeen"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.AndmeteKonfidentsiaalsus"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiVersiooniID">
+      <path value="EETISEncounterLM.TervishoiukontaktiVersiooniID"/>
+      <short value="Automaatne versiooninumber, mis muutub iga andmekirje muudatusega (nt staatus, kuupäev, jne). "/>
+      <definition value="Automaatne versiooninumber, mis muutub iga andmekirje muudatusega (nt staatus, kuupäev, jne)."/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TervishoiukontaktiVersiooniID"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiPlaneeritudPeriood">
+      <path value="EETISEncounterLM.TervishoiukontaktiPlaneeritudPeriood"/>
+      <short value="Alguse- ja lõpukuupäev ning kellaaeg, millal Tervishoiukontakt on planeeritud toimuma."/>
+      <definition value="Alguse- ja lõpukuupäev ning kellaaeg, millal Tervishoiukontakt on planeeritud toimuma."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TervishoiukontaktiPlaneeritudPeriood"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiSubjekt">
+      <path value="EETISEncounterLM.TervishoiukontaktiSubjekt"/>
+      <short value="Patsient, kes on Tervishoiukontaktiga seotud."/>
+      <definition value="Patsient, kes on Tervishoiukontaktiga seotud."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TervishoiukontaktiSubjekt"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Patient"/>
+        <profile value="https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiOsalised">
+      <path value="EETISEncounterLM.TervishoiukontaktiOsalised"/>
+      <short value="TTO-st isikud, kes osalesid Tervishoiukontaktis (nt arst, õde, dokumenteerija)."/>
+      <definition value="TTO-st isikud, kes osalesid Tervishoiukontaktis (nt arst, õde, dokumenteerija)."/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TervishoiukontaktiOsalised"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.MuuAbipersonalOsalised">
+      <path value="EETISEncounterLM.MuuAbipersonalOsalised"/>
+      <short value="Muu abipersonal või osalised, kes Tervishoiukontaktiga seotud olid. Võimaldab Tervishoiukontakti andmestikku lisada isikuid, kes Tervishoiukontaktis on olulised välja tuua (nt tõlk, sotsiaaltöötaja, jne)."/>
+      <definition value="Muu abipersonal või osalised, kes Tervishoiukontaktiga seotud olid. Võimaldab Tervishoiukontakti andmestikku lisada isikuid, kes Tervishoiukontaktis on olulised välja tuua (nt tõlk, sotsiaaltöötaja, jne)."/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.MuuAbipersonalOsalised"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiTeenusepakkuja">
+      <path value="EETISEncounterLM.TervishoiukontaktiTeenusepakkuja"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TervishoiukontaktiTeenusepakkuja"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiToimumiseAsukoht">
+      <path value="EETISEncounterLM.TervishoiukontaktiToimumiseAsukoht"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TervishoiukontaktiToimumiseAsukoht"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiStaatus">
+      <path value="EETISEncounterLM.TervishoiukontaktiStaatus"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TervishoiukontaktiStaatus"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiLiik">
+      <path value="EETISEncounterLM.TervishoiukontaktiLiik"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TervishoiukontaktiLiik"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiErakorralisus">
+      <path value="EETISEncounterLM.TervishoiukontaktiErakorralisus"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TervishoiukontaktiErakorralisus"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiKlass">
+      <path value="EETISEncounterLM.TervishoiukontaktiKlass"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TervishoiukontaktiKlass"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiTyyp">
+      <path value="EETISEncounterLM.TervishoiukontaktiTyyp"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TervishoiukontaktiTyyp"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TegelikPeriood">
+      <path value="EETISEncounterLM.TegelikPeriood"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TegelikPeriood"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.SaabumiseViis">
+      <path value="EETISEncounterLM.SaabumiseViis"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.SaabumiseViis"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.Episood">
+      <path value="EETISEncounterLM.Episood"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.Episood"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="EpisodeOfCare"/>
+        <profile value="https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-episode-of-care"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiDiagnoos">
+      <path value="EETISEncounterLM.TervishoiukontaktiDiagnoos"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TervishoiukontaktiDiagnoos"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.HaiglaraviLoppemiseTulemus">
+      <path value="EETISEncounterLM.HaiglaraviLoppemiseTulemus"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.HaiglaraviLoppemiseTulemus"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.SaatekirjaAndmed">
+      <path value="EETISEncounterLM.SaatekirjaAndmed"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.SaatekirjaAndmed"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiKokkuvoteRavist">
+      <path value="EETISEncounterLM.TervishoiukontaktiKokkuvoteRavist"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EETISEncounterLM.TervishoiukontaktiKokkuvoteRavist"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="EETISEncounterLM">
+      <path value="EETISEncounterLM"/>
+      <short value="Tervishoiukontakt. TEST"/>
+      <definition value="TEST model for Encounter"/>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiID">
+      <path value="EETISEncounterLM.TervishoiukontaktiID"/>
+      <short value="TIS poolt andmete vastuvõtmisel  genereeritud unikaalne identifikaator."/>
+      <definition value="TIS poolt andmete vastuvõtmisel  genereeritud unikaalne identifikaator."/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TTOISSiseneTervishoiukontaktiID">
+      <path value="EETISEncounterLM.TTOISSiseneTervishoiukontaktiID"/>
+      <short value="TTO poolt genereeritud TTO IS-i Tervishoiukontakti ID vastavalt iga TTO IS-i sisese unikaalse nummerdamise reeglitele. "/>
+      <definition value="TTO poolt genereeritud TTO IS-i Tervishoiukontakti ID vastavalt iga TTO IS-i sisese unikaalse nummerdamise reeglitele. "/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.AndmeteKonfidentsiaalsus">
+      <path value="EETISEncounterLM.AndmeteKonfidentsiaalsus"/>
+      <short value="Tervishoiukontakti andmete konfidentsiaalsus erinevatele rollidele."/>
+      <definition value="Tervishoiukontakti andmete konfidentsiaalsus erinevatele rollidele."/>
+      <requirements value="identifikaatorite domeen"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiVersiooniID">
+      <path value="EETISEncounterLM.TervishoiukontaktiVersiooniID"/>
+      <short value="Automaatne versiooninumber, mis muutub iga andmekirje muudatusega (nt staatus, kuupäev, jne). "/>
+      <definition value="Automaatne versiooninumber, mis muutub iga andmekirje muudatusega (nt staatus, kuupäev, jne). "/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiPlaneeritudPeriood">
+      <path value="EETISEncounterLM.TervishoiukontaktiPlaneeritudPeriood"/>
+      <short value="Alguse- ja lõpukuupäev ning kellaaeg, millal Tervishoiukontakt on planeeritud toimuma."/>
+      <definition value="Alguse- ja lõpukuupäev ning kellaaeg, millal Tervishoiukontakt on planeeritud toimuma."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiSubjekt">
+      <path value="EETISEncounterLM.TervishoiukontaktiSubjekt"/>
+      <short value="Patsient, kes on Tervishoiukontaktiga seotud."/>
+      <definition value="Patsient, kes on Tervishoiukontaktiga seotud."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Patient"/>
+        <profile value="https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiOsalised">
+      <path value="EETISEncounterLM.TervishoiukontaktiOsalised"/>
+      <short value="TTO-st isikud, kes osalesid Tervishoiukontaktis (nt arst, õde, dokumenteerija)."/>
+      <definition value="TTO-st isikud, kes osalesid Tervishoiukontaktis (nt arst, õde, dokumenteerija)."/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.MuuAbipersonalOsalised">
+      <path value="EETISEncounterLM.MuuAbipersonalOsalised"/>
+      <short value="Muu abipersonal või osalised, kes Tervishoiukontaktiga seotud olid. Võimaldab Tervishoiukontakti andmestikku lisada isikuid, kes Tervishoiukontaktis on olulised välja tuua (nt tõlk, sotsiaaltöötaja, jne)."/>
+      <definition value="Muu abipersonal või osalised, kes Tervishoiukontaktiga seotud olid. Võimaldab Tervishoiukontakti andmestikku lisada isikuid, kes Tervishoiukontaktis on olulised välja tuua (nt tõlk, sotsiaaltöötaja, jne)."/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiTeenusepakkuja">
+      <path value="EETISEncounterLM.TervishoiukontaktiTeenusepakkuja"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiToimumiseAsukoht">
+      <path value="EETISEncounterLM.TervishoiukontaktiToimumiseAsukoht"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiStaatus">
+      <path value="EETISEncounterLM.TervishoiukontaktiStaatus"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiLiik">
+      <path value="EETISEncounterLM.TervishoiukontaktiLiik"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiErakorralisus">
+      <path value="EETISEncounterLM.TervishoiukontaktiErakorralisus"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiKlass">
+      <path value="EETISEncounterLM.TervishoiukontaktiKlass"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiTyyp">
+      <path value="EETISEncounterLM.TervishoiukontaktiTyyp"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TegelikPeriood">
+      <path value="EETISEncounterLM.TegelikPeriood"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.SaabumiseViis">
+      <path value="EETISEncounterLM.SaabumiseViis"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.Episood">
+      <path value="EETISEncounterLM.Episood"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="EpisodeOfCare"/>
+        <profile value="https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-episode-of-care"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiDiagnoos">
+      <path value="EETISEncounterLM.TervishoiukontaktiDiagnoos"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.HaiglaraviLoppemiseTulemus">
+      <path value="EETISEncounterLM.HaiglaraviLoppemiseTulemus"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.SaatekirjaAndmed">
+      <path value="EETISEncounterLM.SaatekirjaAndmed"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EETISEncounterLM.TervishoiukontaktiKokkuvoteRavist">
+      <path value="EETISEncounterLM.TervishoiukontaktiKokkuvoteRavist"/>
+      <short value="tbc"/>
+      <definition value="tbc"/>
+      <requirements value="vajadus"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

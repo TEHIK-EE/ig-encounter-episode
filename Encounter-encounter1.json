@@ -1,0 +1,147 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "encounter1",
+  "meta" : {
+    "versionId" : "1",
+    "profile" : ["https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-encounter"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter encounter1</b></p><a name=\"encounter1\"> </a><a name=\"hcencounter1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-tis-encounter.html\">EE TIS Encounter</a></p></div><p><b>Any free form text needed</b>: Rutiinne ambulatoorne visiit. Patsient kaebas peavalude üle, määrati täiendav uuring.</p><p><b>EEBase ModeOfArrival</b>: <a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v2-0430.html#v2-0430-A\">arrivalMode: A</a> (Ambulance)</p><p><b>identifier</b>: <code>https://fhir.ee/CodeSystem/local-identifier</code>/K-2024-0042, <code>https://fhir.ee/CodeSystem/local-identifier</code>/TIS-2024-0042</p><p><b>status</b>: Discharged</p><p><b>class</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span></p><p><b>priority</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActPriority R}\">routine</span></p><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/encounter-type visiit}\">Visiit</span>, <span title=\"Codes:{https://fhir.ee/CodeSystem/encounter-recurrence esmane}\">Esmane</span></p><h3>ServiceTypes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://fhir.ee/CodeSystem/ambulatoorsed-vastuvotud AUR001}\">Uroloogi vastuvõtt</span></td></tr></table><p><b>subject</b>: <a href=\"Patient/pat-mari-tamm\">Patient/pat-mari-tamm</a></p><p><b>episodeOfCare</b>: <a href=\"EpisodeOfCare/eoc-2024-001\">EpisodeOfCare/eoc-2024-001</a></p><p><b>basedOn</b>: <a href=\"ServiceRequest/sr-2024-007\">ServiceRequest/sr-2024-007</a></p><p><b>serviceProvider</b>: <a href=\"Organization/org-tallinna-haigla\">Organization/org-tallinna-haigla</a></p><blockquote><p><b>participant</b></p><p><b>period</b>: 2024-03-15 09:02:00+0200 --&gt; 2024-03-15 09:30:00+0200</p><p><b>actor</b>: <a href=\"Practitioner/prac-jaan-mets\">Practitioner/prac-jaan-mets</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title=\"Codes:\">Translator</span></p><p><b>period</b>: 2024-03-15 09:02:00+0200 --&gt; 2024-03-15 09:20:00+0200</p><p><b>actor</b>: <a href=\"PractitionerRole/pr-role-001\">PractitionerRole/pr-role-001</a></p></blockquote><p><b>actualPeriod</b>: 2024-03-15 09:02:00+0200 --&gt; 2024-03-15 09:33:00+0200</p><p><b>plannedStartDate</b>: 2024-03-15 09:00:00+0200</p><p><b>plannedEndDate</b>: 2024-03-15 09:30:00+0200</p><blockquote><p><b>reason</b></p><h3>Values</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition/cond-peavalu\">Condition/cond-peavalu</a></td></tr></table></blockquote><blockquote><p><b>diagnosis</b></p><h3>Conditions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition/cond-peavalu\">Condition/cond-peavalu</a></td></tr></table><p><b>use</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/diagnosis-role AD}\">Admission diagnosis</span></p></blockquote><h3>Admissions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>DischargeDisposition</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/discharge-disposition home}\">Home</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location/loc-kabinet-12\">Location/loc-kabinet-12</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-summary",
+    "valueString" : "Rutiinne ambulatoorne visiit. Patsient kaebas peavalude üle, määrati täiendav uuring."
+  },
+  {
+    "url" : "https://fhir.ee/base/StructureDefinition/ee-mode-of-arrival",
+    "valueCoding" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0430",
+      "code" : "A",
+      "display" : "Ambulance"
+    }
+  }],
+  "identifier" : [{
+    "system" : "https://fhir.ee/CodeSystem/local-identifier",
+    "value" : "K-2024-0042"
+  },
+  {
+    "system" : "https://fhir.ee/CodeSystem/local-identifier",
+    "value" : "TIS-2024-0042"
+  }],
+  "status" : "discharged",
+  "class" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "AMB",
+      "display" : "ambulatory"
+    }]
+  }],
+  "priority" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+      "code" : "R",
+      "display" : "routine"
+    }]
+  },
+  "type" : [{
+    "coding" : [{
+      "system" : "https://fhir.ee/CodeSystem/encounter-type",
+      "code" : "visiit",
+      "display" : "Visiit"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "https://fhir.ee/CodeSystem/encounter-recurrence",
+      "code" : "esmane",
+      "display" : "Esmane"
+    }]
+  }],
+  "serviceType" : [{
+    "concept" : {
+      "coding" : [{
+        "system" : "https://fhir.ee/CodeSystem/ambulatoorsed-vastuvotud",
+        "code" : "AUR001",
+        "display" : "Uroloogi vastuvõtt"
+      }]
+    }
+  }],
+  "subject" : {
+    "reference" : "Patient/pat-mari-tamm"
+  },
+  "episodeOfCare" : [{
+    "reference" : "EpisodeOfCare/eoc-2024-001"
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/sr-2024-007"
+  }],
+  "serviceProvider" : {
+    "reference" : "Organization/org-tallinna-haigla"
+  },
+  "participant" : [{
+    "period" : {
+      "start" : "2024-03-15T09:02:00+02:00",
+      "end" : "2024-03-15T09:30:00+02:00"
+    },
+    "actor" : {
+      "reference" : "Practitioner/prac-jaan-mets"
+    }
+  },
+  {
+    "type" : [{
+      "coding" : [{
+        "code" : "translator",
+        "display" : "Translator"
+      }]
+    }],
+    "period" : {
+      "start" : "2024-03-15T09:02:00+02:00",
+      "end" : "2024-03-15T09:20:00+02:00"
+    },
+    "actor" : {
+      "reference" : "PractitionerRole/pr-role-001"
+    }
+  }],
+  "actualPeriod" : {
+    "start" : "2024-03-15T09:02:00+02:00",
+    "end" : "2024-03-15T09:33:00+02:00"
+  },
+  "plannedStartDate" : "2024-03-15T09:00:00+02:00",
+  "plannedEndDate" : "2024-03-15T09:30:00+02:00",
+  "reason" : [{
+    "value" : [{
+      "reference" : {
+        "reference" : "Condition/cond-peavalu"
+      }
+    }]
+  }],
+  "diagnosis" : [{
+    "condition" : [{
+      "reference" : {
+        "reference" : "Condition/cond-peavalu"
+      }
+    }],
+    "use" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+        "code" : "AD",
+        "display" : "Admission diagnosis"
+      }]
+    }]
+  }],
+  "admission" : {
+    "dischargeDisposition" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+        "code" : "home",
+        "display" : "Home"
+      }]
+    }
+  },
+  "location" : [{
+    "location" : {
+      "reference" : "Location/loc-kabinet-12"
+    }
+  }]
+}

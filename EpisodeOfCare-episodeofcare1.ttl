@@ -1,0 +1,127 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/encounter-episode/EpisodeOfCare/episodeofcare1> a fhir:EpisodeOfCare ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "episodeofcare1"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-episode-of-care"^^xsd:anyURI ;
+       fhir:l <https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-episode-of-care>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EpisodeOfCare episodeofcare1</b></p><a name=\"episodeofcare1\"> </a><a name=\"hcepisodeofcare1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-tis-episode-of-care.html\">EE TIS Episode of Care</a></p></div><p><b>EoC or Encounter reference</b>: <a href=\"Encounter-encounter1.html\">Encounter: extension = Rutiinne ambulatoorne visiit. Patsient kaebas peavalude üle, määrati täiendav uuring.,Ambulance (arrivalMode#A); identifier = https://fhir.ee/CodeSystem/local-identifier#K-2024-0042,https://fhir.ee/CodeSystem/local-identifier#TIS-2024-0042; status = discharged; class = ambulatory; priority = routine; type = Visiit,Esmane; actualPeriod = 2024-03-15 09:02:00+0200 --&gt; 2024-03-15 09:33:00+0200; plannedStartDate = 2024-03-15 09:00:00+0200; plannedEndDate = 2024-03-15 09:30:00+0200</a></p><p><b>Any free form text needed</b>: peavalupatsient</p><p><b>identifier</b>: <code>https://fhir.ee/CodeSystem/tto-local-episode-identifier</code>/EPI-TTO-2024-0042, <code>https://fhir.ee/CodeSystem/tis-episode-identifier</code>/TIS-EPI-2024-0042</p><p><b>status</b>: Active</p><h3>StatusHistories</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td>Planned</td><td>2024-03-10 10:00:00+0200 --&gt; 2024-03-15 09:02:00+0200</td></tr></table><p><b>type</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/eoc-episoodi-tyyp ambulatoorne}\">Ambulatoorne raviepisood</span></p><blockquote><p><b>reason</b></p><p><b>use</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/encounter-reason-use CC}\">Chief Complaint</span></p><h3>Values</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition/cond-peavalu\">Condition/cond-peavalu</a></td></tr></table></blockquote><blockquote><p><b>diagnosis</b></p><h3>Conditions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition/cond-peavalu\">Condition/cond-peavalu</a></td></tr></table><p><b>use</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/diagnosis-role final}\">Final</span></p></blockquote><p><b>patient</b>: <a href=\"Patient/pat-mari-tamm\">Patient/pat-mari-tamm</a></p><p><b>managingOrganization</b>: <a href=\"Organization/org-tallinna-haigla\">Organization/org-tallinna-haigla</a></p><p><b>period</b>: 2024-03-15 09:02:00+0200 --&gt; (ongoing)</p><p><b>careManager</b>: <a href=\"Practitioner/prac-jaan-mets\">Practitioner/prac-jaan-mets</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-eoc-or-encounter-reference"^^xsd:anyURI ;
+       fhir:l <https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-eoc-or-encounter-reference>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://fhir.ee/encounter-episode/Encounter/encounter1> ;
+       fhir:reference [ fhir:v "Encounter/encounter1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-summary"^^xsd:anyURI ;
+       fhir:l <https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-summary>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "peavalupatsient"
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "https://fhir.ee/CodeSystem/tto-local-episode-identifier"^^xsd:anyURI ;
+       fhir:l <https://fhir.ee/CodeSystem/tto-local-episode-identifier>
+     ] ;
+     fhir:value [ fhir:v "EPI-TTO-2024-0042" ]
+  ] [
+     fhir:system [
+       fhir:v "https://fhir.ee/CodeSystem/tis-episode-identifier"^^xsd:anyURI ;
+       fhir:l <https://fhir.ee/CodeSystem/tis-episode-identifier>
+     ] ;
+     fhir:value [ fhir:v "TIS-EPI-2024-0042" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:statusHistory ( [
+     fhir:status [ fhir:v "planned" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2024-03-10T10:00:00+02:00"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2024-03-15T09:02:00+02:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://fhir.ee/CodeSystem/eoc-episoodi-tyyp"^^xsd:anyURI ;
+         fhir:l <https://fhir.ee/CodeSystem/eoc-episoodi-tyyp>
+       ] ;
+       fhir:code [ fhir:v "ambulatoorne" ] ;
+       fhir:display [ fhir:v "Ambulatoorne raviepisood" ]
+     ] )
+  ] ) ; # 
+  fhir:reason ( [
+     fhir:use [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/encounter-reason-use"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/encounter-reason-use>
+         ] ;
+         fhir:code [ fhir:v "CC" ] ;
+         fhir:display [ fhir:v "Chief Complaint" ]
+       ] )
+     ] ;
+     fhir:value ( [
+       fhir:reference [
+         fhir:l <https://fhir.ee/encounter-episode/Condition/cond-peavalu> ;
+         fhir:reference [ fhir:v "Condition/cond-peavalu" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:diagnosis ( [
+     fhir:condition ( [
+       fhir:reference [
+         fhir:l <https://fhir.ee/encounter-episode/Condition/cond-peavalu> ;
+         fhir:reference [ fhir:v "Condition/cond-peavalu" ]
+       ]
+     ] ) ;
+     fhir:use [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/diagnosis-role"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/diagnosis-role>
+         ] ;
+         fhir:code [ fhir:v "final" ] ;
+         fhir:display [ fhir:v "Final" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:patient [
+     fhir:l <https://fhir.ee/encounter-episode/Patient/pat-mari-tamm> ;
+     fhir:reference [ fhir:v "Patient/pat-mari-tamm" ]
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:l <https://fhir.ee/encounter-episode/Organization/org-tallinna-haigla> ;
+     fhir:reference [ fhir:v "Organization/org-tallinna-haigla" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2024-03-15T09:02:00+02:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:careManager [
+     fhir:l <https://fhir.ee/encounter-episode/Practitioner/prac-jaan-mets> ;
+     fhir:reference [ fhir:v "Practitioner/prac-jaan-mets" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

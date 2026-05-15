@@ -4,36 +4,40 @@ Id: ee-tis-encounter
 Title: "EE TIS Encounter"
 Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
 * extension contains
-    ExtensionEETISSummary named summary 0..1
-* extension[summary] ^short = "Textual summary of encounter when needed."    
-* meta.versionId ^short = "versiooni identifikaator"
-* meta.security ^short = "Konfidentsiaalsus siia? HL7 codesystem. Seda saaks ka sliceda...? Konf.patsiendile/konf arstile/konf usaldusisikule, 3 slice."
-* identifier ^short = "Kas see oleks vaja sliceda?"
+    ExtensionEETISSummary named summary 0..1 and
+    ExtensionEETISEoCorEncounterReference named relations 0..*
+* extension[summary] ^short = "Textual summary of encounter when needed. (ee Vabatekstiline kokkuvõte kontaktist.)"    
+* extension[relations] ^short = "Related encounter when needed. (ee KAS partOf LAHENDAKS SELLE VAJADUSE ÄRA?!?!?! )"
+* meta.versionId ^short = "(ee Versiooni identifikaator)"
+* meta.security ^short = "Confidentiality for patient, practitioner and trustee. (ee Konfidentsiaalsus siia? HL7 codesystem. Seda saaks ka sliceda...? Konf.patsiendile/konf arstile/konf usaldusisikule, 3 slice.)"
+* identifier ^short = "Identifier for local systems and across systems. (ee Identifikaator TTO siseseks kasutamiseks ja IS üleselt. NB! Vaja erinevaid systemeid.)"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
-* identifier ^slicing.description = "When there is a need for local identifier and overall identifier, different systems must be used."
+* identifier ^slicing.description = "When there is a need for local identifier and across systems identifier, different systems must be used."
 * identifier ^slicing.ordered = false
 * identifier contains
     ttoLocalIdentifier 0..1 and
     crossTtoIdentifier 0..1
-* status ^short = "HL7 loend"
+* status ^short = "(ee HL7 loend, vaja tõlget.)"
 * class 1..1
 * class ^short = "(ee KLASS. Describes the form of encounter (|ambulatoorne|,|statsionaarne|; HL7 loendile mäping+tõlge? Fix kood per profiil?)"
-* priority ^short = "(ee ERAKORRALISUS. |erakorraline|, |vältimatu|, |plaaniline|)"
-* type ^short = "Tervishoiukontakti TÜÜP ja LIIK (|esmane|, |korduv|). Type or aim of encounter. (|visiit|,|videokonsultatsioon|, |email|, |telefonikonsultatsioon|,... VAJA LOENDIT kas korduva lahendada re-admissioniga? Kui see pole täidetud on alati esmane???)"
+* priority ^short = "(ee ERAKORRALISUS. |erakorraline|, |vältimatu|, |plaaniline| - kas saab HL7 loendit kasutada?)"
+* type ^short = "Types of encounter. (ee Tervishoiukontakti TÜÜP |visiit|,|videokonsultatsioon|, |email|, |telefonikonsultatsioon|, ja LIIK (|esmane|, |korduv|). ( VAJA LOENDIT kas korduva lahendada re-admissioniga? Kui see pole täidetud on alati esmane???)"
 * type ^slicing.discriminator.type = #value
 * type ^slicing.discriminator.path = "system"
 * type ^slicing.rules = #open
-* type ^slicing.description = "When there is a need for local identifier and overall identifier, different systems must be used."
 * type ^slicing.ordered = false
 * type contains
     encounterType 0..1 and
     encounterRecurrence 0..1
-* plannedStartDate ^short = "(ee Kontakti planeeritud algusaeg)"
-* plannedEndDate ^short = "(ee Kontakti planeeeritud lõpuaeg)"
-* serviceType ^short = "AMB.teenuste loend?"
+* type[encounterType] ^short = "tervishoiukontakti tüüp (näiteks |visiit|,|videokonsultatsioon|, |email|, |telefonikonsultatsioon|)"
+* type[encounterRecurrence] ^short = "kontakti liik (|esmane|, |korduv|)"
+* plannedStartDate ^short = "When the encounter is supposed to start. (ee Kontakti planeeritud algusaeg)"
+* plannedEndDate ^short = "When the encounter is supposed to end. (ee Kontakti planeeeritud lõpuaeg)"
+* serviceType ^short = "AMB.teenuste loend?????"
 * subject only Reference($ee-mpi-patient or EEBasePatient)
+* subject ^short = "Patient reference from MPI. (ee VIIDE patsiendile, PÜT!)"
 //* basedOn only Reference(ServiceRequest)
 * basedOn ^short = "Refferral or other document that is related to this encounter. (ee SAATEKIRI või muu dokument, mis on seotud tervishoiukontaktiga. NB! ServiceRequest pole profileeritud.)"
 * participant.actor only Reference(EEBasePractitioner or EEBaseRelatedPerson or EEBasePractitionerRole)

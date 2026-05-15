@@ -5,6 +5,7 @@ Title: "EE TIS Encounter"
 Description: "A profile for basic encounter. (ee TERVISHOIUKONTAKT v KONTAKT)"
 * extension contains
     ExtensionEETISSummary named summary 0..1
+* extension[summary] ^short = "Textual summary of encounter when needed."    
 * meta.versionId ^short = "versiooni identifikaator"
 * meta.security ^short = "Konfidentsiaalsus siia? HL7 codesystem. Seda saaks ka sliceda...? Konf.patsiendile/konf arstile/konf usaldusisikule, 3 slice."
 * identifier ^short = "Kas see oleks vaja sliceda?"

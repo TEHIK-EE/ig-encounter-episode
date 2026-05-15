@@ -1,23 +1,25 @@
 Instance: encounter1
-InstanceOf: ee-tis-encounter
+InstanceOf: Encounter
 Usage: #example
 Title: "Example of ambulatory encounter"
 Description: "Näidis ambulatoorsest tervishoiukontaktist: rutiinne esmane visiit kahe osalejaga."
-* extension[summary].valueString = "Rutiinne ambulatoorne visiit. Patsient kaebas peavalude üle, määrati täiendav uuring."
+* meta.profile = "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-encounter"
+* extension.url = "https://fhir.ee/encounter-episode/StructureDefinition/ee-tis-summary"
+* extension.valueString = "Rutiinne ambulatoorne visiit. Patsient kaebas peavalude üle, määrati täiendav uuring."
 * meta.versionId = "1"
-* identifier[ttoLocalIdentifier].system = "https://fhir.ee/CodeSystem/local-identifier"
-* identifier[ttoLocalIdentifier].value = "K-2024-0042"
-* identifier[crossTtoIdentifier].system = "https://fhir.ee/CodeSystem/local-identifier"
-* identifier[crossTtoIdentifier].value = "TIS-2024-0042"
+* identifier[0].system = "https://fhir.ee/CodeSystem/local-identifier"
+* identifier[=].value = "K-2024-0042"
+* identifier[+].system = "https://fhir.ee/CodeSystem/local-identifier"
+* identifier[=].value = "TIS-2024-0042"
 * status = #discharged
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB "ambulatory"
 * priority = http://terminology.hl7.org/CodeSystem/v3-ActPriority#R "routine"
-* type[encounterType].coding.system    = "https://fhir.ee/CodeSystem/encounter-type"
-* type[encounterType].coding.code      = #visiit
-* type[encounterType].coding.display   = "Visiit"
-* type[encounterRecurrence].coding.system    = "https://fhir.ee/CodeSystem/encounter-recurrence"
-* type[encounterRecurrence].coding.code      = #esmane
-* type[encounterRecurrence].coding.display   = "Esmane"
+* type[0].coding.system    = "https://fhir.ee/CodeSystem/encounter-type"
+* type[=].coding.code      = #visiit
+* type[=].coding.display   = "Visiit"
+* type[+].coding.system    = "https://fhir.ee/CodeSystem/encounter-recurrence"
+* type[=].coding.code      = #esmane
+* type[=].coding.display   = "Esmane"
 * plannedStartDate = "2024-03-15T09:00:00+02:00"
 * plannedEndDate   = "2024-03-15T09:30:00+02:00"
 * serviceType.concept = $amb-teenused#AUR001 "Uroloogi vastuvõtt"

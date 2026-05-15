@@ -9,7 +9,7 @@ Description: "Näidis ambulatoorsest tervishoiukontaktist: rutiinne esmane visii
 * identifier[ttoLocalIdentifier].value = "K-2024-0042"
 * identifier[crossTtoIdentifier].system = "https://fhir.ee/CodeSystem/local-identifier"
 * identifier[crossTtoIdentifier].value = "TIS-2024-0042"
-* status = #finished
+* status = #discharged
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB "ambulatory"
 * priority = http://terminology.hl7.org/CodeSystem/v3-ActPriority#R "routine"
 * type[encounterType].coding.system    = "https://fhir.ee/CodeSystem/encounter-type"
